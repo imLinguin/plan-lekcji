@@ -1,0 +1,123 @@
+1
+ 7:10- 7:55
+ 
+ 
+ 
+ 
+ 
+
+
+2
+ 8:00- 8:45
+ 
+ 
+ 
+ 
+ 
+
+
+3
+ 8:50- 9:35
+ 
+ 
+ 
+ 
+ 
+
+
+4
+ 9:40-10:25
+ 
+ 
+ 
+ 
+wf-2/2 KC
+
+
+5
+10:45-11:30
+wf-1/2 KBj.angielski-2/2 AG
+ 
+ 
+ 
+pr.sieci kom-2/2 PL
+
+
+6
+11:35-12:20
+r_matematyka AR
+ 
+wf-1/2 KB
+ 
+pr.sieci kom-2/2 PL
+
+
+7
+12:25-13:10
+j.polski LD
+ 
+j.angielski-1/2 FD
+pr.baz dan.-2/2 PG
+j.angielski-1/2 FDj.angielski-2/2 AG
+
+
+8
+13:15-14:00
+j.angielski-1/2 FDwf-2/2 KC
+r_informat.-1/2 SJj.niemiecki-2/2 AS
+pr.sys.oper-1/2 LŚpr.sys.oper-2/2 KU
+wf-1/2 KBpr.baz dan.-2/2 PG
+hist. i społ MK
+
+
+9
+14:05-14:50
+hist. i społ MK
+r_informat.-1/2 SJwf-2/2 KC
+pr.sys.oper-1/2 LŚpr.sys.oper-2/2 KU
+pr.sieci kom-1/2 PLsys. baz dan-2/2 Mi
+religia GI
+
+
+10
+14:55-15:40
+religia GI
+sieci-1/2 LEj.angielski-2/2 AG
+pr.sys.oper-1/2 LŚpr.sys.oper-2/2 KU
+pr.sieci kom-1/2 PLsys. baz dan-2/2 Mi
+j.polski LD
+
+
+11
+15:45-16:30
+pr.baz dan.-1/2 PGstr.inter.-2/2 KI
+sieci-1/2 LEr_informat.-2/2 SJ
+matematyka AR
+matematyka AR
+zaj. wych. LD
+
+
+12
+16:45-17:30
+pr.baz dan.-1/2 PGstr.inter.-2/2 KI
+j.niemiecki-1/2 NPr_informat.-2/2 SJ
+matematyka AR
+j.polski LD
+pr.prog.apl.-1/2 CM
+
+
+13
+17:35-18:20
+ 
+str.inter.-1/2 KIpr.prog.apl.-2/2 ZN
+sieci-2/2 LE
+sys. baz dan-1/2 Mi
+pr.prog.apl.-1/2 CM
+
+
+14
+18:25-19:10
+ 
+str.inter.-1/2 KIpr.prog.apl.-2/2 ZN
+sieci-2/2 LE
+sys. baz dan-1/2 Mi

@@ -1,0 +1,121 @@
+1
+ 7:10- 7:55
+ 
+ 
+ 
+ 
+ 
+
+
+2
+ 8:00- 8:45
+ 
+ 
+ 
+ 
+ 
+
+
+3
+ 8:50- 9:35
+przyrz. pom. EM
+ 
+ 
+ 
+ 
+
+
+4
+ 9:40-10:25
+ukł.cyfrowe UT
+pr.el i elek-1/4 JDpr.el i elek-2/4 Kr
+ 
+ 
+ 
+
+
+5
+10:45-11:30
+wf-1/2 GWwf-2/2 KC
+pr.el i elek-1/4 JDpr.el i elek-2/4 Kr
+r_fizyka SZ
+r_fizyka-1/2 SZwf-2/2 KC
+ 
+
+
+6
+11:35-12:20
+ukł.anal. EM
+pr.el i elek-1/4 JDpr.el i elek-2/4 Kr
+ukł.anal. EM
+ukł.anal. EM
+ 
+
+
+7
+12:25-13:10
+matematyka KP
+j.polski MW
+j.niemiecki-1/2 NAj.angielski-2/2 EF
+z_angielski-1/2 WGr_fizyka-2/2 SZ
+ 
+
+
+8
+13:15-14:00
+dział.gospod AP
+matematyka KP
+ukł.cyfrowe UT
+religia PI
+ 
+
+
+9
+14:05-14:50
+j.angielski-1/2 FDz_angielski-2/2 WG
+historia MK
+wf-1/2 GWwf-2/2 KC
+j.angielski-1/2 FDj.angielski-2/2 EF
+ 
+
+
+10
+14:55-15:40
+j.polski MW
+zaj. wych. AP
+j.polski MW
+r_matematyka KP
+ 
+
+
+11
+15:45-16:30
+ 
+religia PI
+instalacje Kr
+wf-1/2 GWj.niemiecki-2/2 KY
+ 
+
+
+12
+16:45-17:30
+ 
+pr.el i elek-3/4 Krpr.el i elek-4/4 MR
+r_matematyka KP
+instalacje Kr
+ 
+
+
+13
+17:35-18:20
+ 
+pr.el i elek-3/4 Krpr.el i elek-4/4 MR
+ 
+ 
+ 
+
+
+14
+18:25-19:10
+ 
+pr.el i elek-3/4 Krpr.el i elek-4/4 MR

@@ -1,0 +1,111 @@
+1
+ 7:10- 7:55
+ 
+ 
+ 
+ 
+pr.tech.wytw-4/4 WS
+
+
+2
+ 8:00- 8:45
+ 
+informatyka-1/2 CEelekt elektr-2/2 EM
+geografia MH
+chemia KO
+pr.rys.tech-1/4 AŚpr.tech.wytw-4/4 WS
+
+
+3
+ 8:50- 9:35
+ 
+elekt elektr-1/2 EMinformatyka-2/2 CE
+e_dla_bezp SG
+j.polski WM
+pr.rys.tech-1/4 AŚpr.tech.wytw-4/4 WS
+
+
+4
+ 9:40-10:25
+pr.tech.wytw-3/4 SA
+wf-1/2 KNj.angielski-2/2 ED
+wf-1/2 KNelekt elektr-2/2 EM
+matematyka Bi
+r_matematyka Bi
+
+
+5
+10:45-11:30
+pr.rys.tech-2/4 AŚpr.tech.wytw-3/4 SA
+j.niemiecki-1/2 NAchemia-2/2 KO
+plastyka ER
+j.angielski-1/2 KAwf-2/2 ML
+j.polski WM
+
+
+6
+11:35-12:20
+pr.rys.tech-2/4 AŚpr.tech.wytw-3/4 SA
+z_angielski WG
+chemia-1/2 KOwf-2/2 ML
+wf-1/2 KNj.angielski-2/2 ED
+zaj. wych. WM
+
+
+7
+12:25-13:10
+elekt elektr EM
+j.angielski-1/2 KAj.niemiecki-2/2 KY
+elekt elektr-1/2 EMj.niemiecki-2/2 KY
+historia DZ
+j.niemiecki-1/2 NAwf-2/2 ML
+
+
+8
+13:15-14:00
+j.polski WM
+BHP MC
+religia PI
+fizyka MJ
+pr.tech.wytw-2/4 SKpr.rys.tech-4/4 WS
+
+
+9
+14:05-14:50
+matematyka Bi
+r_fizyka MJ
+elekt elektr EM
+religia PI
+pr.tech.wytw-2/4 SKpr.rys.tech-4/4 WS
+
+
+10
+14:55-15:40
+historia DZ
+ 
+ 
+ 
+pr.tech.wytw-2/4 SK
+
+
+11
+15:45-16:30
+pr.tech.wytw-1/4 SKpr.rys.tech-3/4 WS
+ 
+ 
+ 
+ 
+
+
+12
+16:45-17:30
+pr.tech.wytw-1/4 SKpr.rys.tech-3/4 WS
+ 
+ 
+ 
+ 
+
+
+13
+17:35-18:20
+pr.tech.wytw-1/4 SK

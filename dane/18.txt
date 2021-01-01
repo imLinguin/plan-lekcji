@@ -1,0 +1,122 @@
+1
+ 7:10- 7:55
+ 
+ 
+ 
+ 
+ 
+
+
+2
+ 8:00- 8:45
+ 
+ 
+ 
+ 
+ 
+
+
+3
+ 8:50- 9:35
+pr.urz.elekt-3/4 WL
+ 
+pr.anal.cyf-1/4 MNpr.anal.cyf-2/4 AŚ
+ 
+ 
+
+
+4
+ 9:40-10:25
+pr.urz.elekt-3/4 WL
+ 
+pr.anal.cyf-1/4 MNpr.anal.cyf-2/4 AŚ
+ 
+j.niemiecki-1/2 ASwf-2/2 BG
+
+
+5
+10:45-11:30
+pr.urz.elekt-3/4 WL
+matematyka AR
+pr.anal.cyf-1/4 MNpr.anal.cyf-2/4 AŚ
+ 
+ukł. mikro. WK
+
+
+6
+11:35-12:20
+pr.urz.elekt-3/4 WL
+r_matematyka AR
+pr.anal.cyf-1/4 MNpr.anal.cyf-2/4 AŚ
+hist. i społ MK
+urz.elektron WK
+
+
+7
+12:25-13:10
+j.angielski-1/2 KAj.niemiecki-2/2 NA
+urz. RTV TM
+matematyka AR
+religia GI
+urz.elektron WK
+
+
+8
+13:15-14:00
+wf-1/2 ATj.angielski-2/2 BJ
+hist. i społ MK
+r_fizyka SZ
+j.polski WM
+j.polski WM
+
+
+9
+14:05-14:50
+urz.elektron WK
+ukł. mikro. WK
+urz. RTV TM
+matematyka AR
+r_fizyka SZ
+
+
+10
+14:55-15:40
+pr.urz.elekt-1/4 GJpr.urz.elekt-2/4 WL
+wf-1/2 ATwf-2/2 BG
+j.angielski-1/2 KAj.angielski-2/2 BJ
+wf-1/2 ATwf-2/2 BG
+j.angielski-1/2 KAj.angielski-2/2 BJ
+
+
+11
+15:45-16:30
+pr.urz.elekt-1/4 GJpr.urz.elekt-2/4 WL
+j.polski WM
+pr.anal.cyf-3/4 AŚ
+zaj. wych. SZ
+religia GI
+
+
+12
+16:45-17:30
+pr.urz.elekt-1/4 GJpr.urz.elekt-2/4 WL
+ 
+pr.anal.cyf-3/4 AŚ
+ 
+ 
+
+
+13
+17:35-18:20
+pr.urz.elekt-1/4 GJpr.urz.elekt-2/4 WL
+ 
+pr.anal.cyf-3/4 AŚ
+ 
+ 
+
+
+14
+18:25-19:10
+ 
+ 
+pr.anal.cyf-3/4 AŚ

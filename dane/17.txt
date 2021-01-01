@@ -1,0 +1,113 @@
+1
+ 7:10- 7:55
+ 
+ 
+ 
+ 
+ 
+
+
+2
+ 8:00- 8:45
+ 
+ 
+ 
+pr.ster.pro-1/4 MCpr.ster.pro-3/4 WK
+ 
+
+
+3
+ 8:50- 9:35
+ 
+ 
+ 
+pr.ster.pro-1/4 MCpr.ster.pro-3/4 WK
+ 
+
+
+4
+ 9:40-10:25
+ 
+pr.urz.aut-2/4 RBpr.urz.aut-3/4 SB
+pr. sym.aut-2/4 RB
+pr.ster.pro-1/4 MCpr.ster.pro-3/4 WK
+ 
+
+
+5
+10:45-11:30
+ 
+pr.urz.aut-2/4 RBpr.urz.aut-3/4 SB
+pr. sym.aut-2/4 RB
+j.polski BK
+j.polski BK
+
+
+6
+11:35-12:20
+j.angielski-1/2 FDwf-2/2 KB
+pr.urz.aut-2/4 RBpr.urz.aut-3/4 SB
+pr. sym.aut-2/4 RB
+j.niemiecki-1/2 ASwf-2/2 KB
+j.angielski-1/2 FDj.angielski-2/2 EF
+
+
+7
+12:25-13:10
+matematyka Bi
+p.aut.reg SB
+r_matematyka Bi
+matematyka Bi
+matematyka Bi
+
+
+8
+13:15-14:00
+r_fizyka SZ
+wf-1/2 ATj.angielski-2/2 EF
+urz.ukł.aut SB
+zaj. wych. BK
+hist. i społ DZ
+
+
+9
+14:05-14:50
+urz.ukł.aut SB
+urz.ukł.aut SB
+j.angielski-1/2 FDj.niemiecki-2/2 NA
+r_fizyka SZ
+wf-1/2 ATwf-2/2 KB
+
+
+10
+14:55-15:40
+j.polski BK
+urz.ukł.aut SB
+wf-1/2 ATj.angielski-2/2 EF
+pr.ster.pro-2/4 WK
+religia GI
+
+
+11
+15:45-16:30
+p.aut.reg SB
+pr.urz.aut-1/4 RB
+pr. sym.aut-1/4 RBpr. sym.aut-3/4 MC
+pr.ster.pro-2/4 WK
+ 
+
+
+12
+16:45-17:30
+religia GI
+pr.urz.aut-1/4 RB
+pr. sym.aut-1/4 RBpr. sym.aut-3/4 MC
+pr.ster.pro-2/4 WK
+ 
+
+
+13
+17:35-18:20
+hist. i społ DZ
+pr.urz.aut-1/4 RB
+pr. sym.aut-1/4 RBpr. sym.aut-3/4 MC

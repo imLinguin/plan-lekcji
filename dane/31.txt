@@ -1,0 +1,88 @@
+1
+ 7:10- 7:55
+r_informat.-1/2 CM
+ 
+j.angielski-1/2 AGr_informat.-2/2 SJ
+j.niemiecki-1/2 AS
+ 
+
+
+2
+ 8:00- 8:45
+r_informat.-1/2 CM
+j.niemiecki-1/2 ASj.niemiecki-2/2 KY
+wf-1/2 BGr_informat.-2/2 SJ
+hist. i społ DZ
+ 
+
+
+3
+ 8:50- 9:35
+religia GU
+matematyka KP
+hist. i społ DZ
+j.angielski-1/2 AGj.angielski-2/2 KA
+ 
+
+
+4
+ 9:40-10:25
+wf-1/2 BGj.angielski-2/2 KA
+r_matematyka KP
+j.niemiecki-1/2 ASj.angielski-2/2 KA
+j.angielski-1/2 AGj.angielski-2/2 KA
+j.niemiecki-2/2 KY
+
+
+5
+10:45-11:30
+r_matematyka KP
+j.angielski-1/2 AGr_informat.-2/2 SJ
+zaj. wych. DZ
+r_informat.-1/2 CMj.niemiecki-2/2 KY
+wf-1/2 BGwf-2/2 KC
+
+
+6
+11:35-12:20
+matematyka KP
+j.polski BK
+religia GU
+r_matematyka KP
+matematyka KP
+
+
+7
+12:25-13:10
+j.polski BK
+r_informat.-1/2 CMwf-2/2 KC
+wf-2/2 KC
+matematyka KP
+r_matematyka KP
+
+
+8
+13:15-14:00
+hist. i społ DZ
+ 
+ 
+ 
+j.polski BK
+
+
+9
+14:05-14:50
+r_informat.-2/2 SJ
+ 
+ 
+ 
+j.polski BK
+
+
+10
+14:55-15:40
+r_informat.-2/2 SJ
+ 
+ 
+ 
+r_informat.-1/2 CM

@@ -1,0 +1,79 @@
+1
+ 7:10- 7:55
+wf-1/3 GW
+prac.syst.op-1/2 HKsieci-2/2 BZ
+e_dla_bezp-1/2 SG
+biologia CE
+ 
+
+
+2
+ 8:00- 8:45
+matematyka KP
+prac.syst.op-1/2 HKsieci-2/2 BZ
+systemy-1/2 Adurządz. tech-2/2 WC
+z_angielski-1/2 MMsystemy-2/2 Ad
+matematyka KP
+
+
+3
+ 8:50- 9:35
+r_matematyka KP
+j.polski MW
+systemy-1/2 Adurządz. tech-2/2 WC
+sieci-1/2 BZsystemy-2/2 Ad
+biologia CE
+
+
+4
+ 9:40-10:25
+urządz. tech-1/2 WCprac.syst.op-2/2 HK
+j.angielski-1/3 WGwf-2/3 AT
+systemy-1/2 Adr_informat.-2/2 SJ
+sieci-1/2 BZsystemy-2/2 Ad
+geografia MH
+
+
+5
+10:45-11:30
+urządz. tech-1/2 WCprac.syst.op-2/2 HK
+wf-1/3 GWj.angielski-2/3 EF
+j.niemiecki-1/3 KYj.niemiecki-2/3 NA
+j.polski MW
+j.angielski-1/3 WGwf-2/3 AT
+
+
+6
+11:35-12:20
+j.niemiecki-1/3 KYz_angielski-2/3 MM
+plastyka ER
+geografia MH
+informatyka-1/3 SJj.angielski-2/3 EF
+zaj. wych. PG
+
+
+7
+12:25-13:10
+historia MK
+wf-3/3 #wd3
+BHP MC
+religia PI
+historia MK
+
+
+8
+13:15-14:00
+j.polski MW
+ 
+j.niemiecki-2/3 NAwf-3/3 #wd3
+r_informat.-1/2 SJ
+wf-1/3 GWinformatyka-2/3 SJwf-3/3 #wd3
+
+
+9
+14:05-14:50
+e_dla_bezp-2/2 SG
+ 
+wf-2/3 AT
+ 
+religia PI

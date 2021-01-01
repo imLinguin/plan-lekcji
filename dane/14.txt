@@ -1,0 +1,121 @@
+1
+ 7:10- 7:55
+ 
+ 
+ 
+ 
+ 
+
+
+2
+ 8:00- 8:45
+ 
+ 
+ 
+ 
+sieci-1/2 Adpr.sys.oper-2/2 KU
+
+
+3
+ 8:50- 9:35
+pr.sys.oper-1/2 LŚsieci-2/2 RK
+ 
+ 
+ 
+sieci-1/2 Adpr.sys.oper-2/2 KU
+
+
+4
+ 9:40-10:25
+pr.sys.oper-1/2 LŚsieci-2/2 RK
+ 
+ 
+ 
+sieci-1/2 Adpr.sys.oper-2/2 KU
+
+
+5
+10:45-11:30
+pr.sys.oper-1/2 LŚsieci-2/2 RK
+ 
+ 
+historia MK
+r_informat.-1/2 LMpr.sieci kom-2/2 LE
+
+
+6
+11:35-12:20
+wf-1/3 GWj.niemiecki-2/3 NP
+ 
+dział.gospod AP
+j.polski MW
+r_informat.-1/2 LMpr.sieci kom-2/2 LE
+
+
+7
+12:25-13:10
+j.polski MW
+wf-3/3 #wd3
+z_angielski-1/3 MMstr.inter.-2/3 KI
+matematyka AR
+j.polski MW
+
+
+8
+13:15-14:00
+j.niemiecki-1/2 NAj.angielski-2/2 KA
+zaj. wych. AR
+wf-1/3 GWstr.inter.-2/3 KIwf-3/3 #wd3
+r_matematyka AR
+wf-3/3 #wd3
+
+
+9
+14:05-14:50
+j.angielski-1/3 BJwf-2/3 AT
+j.angielski-1/3 BJwf-2/3 AT
+pr.sieci kom-1/2 LEj.angielski-2/2 KA
+wf-1/3 GWwf-2/3 AT
+ 
+
+
+10
+14:55-15:40
+religia PI
+r_matematyka AR
+pr.sieci kom-1/2 LEz_angielski-2/2 MM
+urządz. tech-1/2 WIsystemy-2/2 HK
+ 
+
+
+11
+15:45-16:30
+ 
+str.inter.-1/2 KIurządz. tech-2/2 WI
+systemy-1/2 HKsys. baz dan-2/2 Mi
+urządz. tech-1/2 WIsystemy-2/2 HK
+ 
+
+
+12
+16:45-17:30
+ 
+str.inter.-1/2 KIurządz. tech-2/2 WI
+systemy-1/2 HKsys. baz dan-2/2 Mi
+religia PI
+ 
+
+
+13
+17:35-18:20
+ 
+sys. baz dan-1/2 Mir_informat.-2/2 LM
+matematyka AR
+ 
+ 
+
+
+14
+18:25-19:10
+ 
+sys. baz dan-1/2 Mir_informat.-2/2 LM

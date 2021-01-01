@@ -1,0 +1,78 @@
+1
+ 7:10- 7:55
+j.niemiecki-2/2 AS
+ 
+matematyka DI
+ 
+j.angielski-1/2 EDj.angielski-2/2 WG
+
+
+2
+ 8:00- 8:45
+r_fizyka SZ
+ 
+r_matematyka DI
+ 
+matematyka DI
+
+
+3
+ 8:50- 9:35
+r_fizyka SZ
+r_fizyka SZ
+hist. i społ MH
+ 
+r_matematyka DI
+
+
+4
+ 9:40-10:25
+hist. i społ MH
+r_fizyka SZ
+r_fizyka SZ
+r_fizyka SZ
+j.polski MW
+
+
+5
+10:45-11:30
+religia GU
+hist. i społ MH
+j.niemiecki-1/2 NPj.angielski-2/2 WG
+j.angielski-1/2 EDj.niemiecki-2/2 AS
+j.niemiecki-1/2 NPj.niemiecki-2/2 AS
+
+
+6
+11:35-12:20
+zaj. wych. AT
+wf AT
+j.polski MW
+religia GU
+wf AT
+
+
+7
+12:25-13:10
+matematyka DI
+matematyka DI
+j.polski MW
+j.polski MW
+ 
+
+
+8
+13:15-14:00
+j.angielski-1/2 EDj.angielski-2/2 WG
+j.angielski-1/2 EDj.angielski-2/2 WG
+ 
+wf AT
+ 
+
+
+9
+14:05-14:50
+ 
+j.niemiecki-1/2 NP
+ 
+r_matematyka DI

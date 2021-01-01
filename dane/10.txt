@@ -1,0 +1,113 @@
+1
+ 7:10- 7:55
+ 
+pr.el i elek-2/4 JDpr.el i elek-4/4 Kr
+ 
+ 
+geografia MH
+
+
+2
+ 8:00- 8:45
+elekt elektr UT
+pr.el i elek-2/4 JDpr.el i elek-4/4 Kr
+ 
+ 
+j.niemiecki-1/3 NPz_angielski-2/3 WG
+
+
+3
+ 8:50- 9:35
+elekt elektr UT
+pr.el i elek-2/4 JDpr.el i elek-4/4 Kr
+ 
+elekt elektr-2/3 UT
+j.polski BK
+
+
+4
+ 9:40-10:25
+r_fizyka-1/3 MJj.niemiecki-2/3 KY
+chemia KO
+p.i.elektron-1/4 SKp.i.elektron-4/4 MC
+wf-1/3 KCinformatyka-2/3 CE
+informatyka-1/3 CEwf-2/3 AT
+
+
+5
+10:45-11:30
+z_angielski-1/3 WGchemia-2/3 KO
+matematyka KZ
+p.i.elektron-1/4 SKp.i.elektron-4/4 MC
+elekt elektr-1/3 UTj.angielski-2/3 WG
+religia GI
+
+
+6
+11:35-12:20
+wf-1/3 KCr_fizyka-2/3 MJ
+wf-1/3 KCj.niemiecki-2/3 KY
+p.i.elektron-1/4 SKp.i.elektron-4/4 MC
+j.polski BK
+przedsięb. AP
+
+
+7
+12:25-13:10
+j.niemiecki-1/3 NPj.angielski-2/3 WG
+j.angielski-1/3 FDwf-2/3 ATwf-3/3 #wd3
+religia GI
+r_matematyka KZ
+chemia-1/2 KOfizyka-2/2 MJ
+
+
+8
+13:15-14:00
+zaj. wych. UT
+historia DZ
+j.angielski-1/3 FDwf-2/3 ATwf-3/3 #wd3
+historia DZ
+fizyka-1/3 MJwf-3/3 #wd3
+
+
+9
+14:05-14:50
+j.polski BK
+pr.el i elek-1/4 MRpr.el i elek-3/4 Kr
+matematyka KZ
+instalacje Kr
+ 
+
+
+10
+14:55-15:40
+ 
+pr.el i elek-1/4 MRpr.el i elek-3/4 Kr
+instalacje Kr
+instalacje Kr
+ 
+
+
+11
+15:45-16:30
+ 
+pr.el i elek-1/4 MRpr.el i elek-3/4 Kr
+p.i.elektron-2/4 TMp.i.elektron-3/4 WS
+ 
+ 
+
+
+12
+16:45-17:30
+ 
+ 
+p.i.elektron-2/4 TMp.i.elektron-3/4 WS
+ 
+ 
+
+
+13
+17:35-18:20
+ 
+ 
+p.i.elektron-2/4 TMp.i.elektron-3/4 WS

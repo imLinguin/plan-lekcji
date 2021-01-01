@@ -1,0 +1,124 @@
+1
+ 7:10- 7:55
+ 
+ 
+ 
+ 
+ 
+
+
+2
+ 8:00- 8:45
+ 
+ 
+ 
+ 
+ 
+
+
+3
+ 8:50- 9:35
+ 
+ 
+ 
+ 
+ 
+
+
+4
+ 9:40-10:25
+pr.el i elek-3/4 Krpr.el i elek-4/4 MR
+ 
+ 
+ 
+pr.urz.aut-2/4 SBpr.urz.aut-4/4 RB
+
+
+5
+10:45-11:30
+pr.el i elek-3/4 Krpr.el i elek-4/4 MR
+ 
+ 
+ 
+pr.urz.aut-2/4 SBpr.urz.aut-4/4 RB
+
+
+6
+11:35-12:20
+pr.el i elek-3/4 Krpr.el i elek-4/4 MR
+ 
+r_fizyka MJ
+r_fizyka-1/3 MJj.angielski-2/3 KA
+pr.urz.aut-2/4 SBpr.urz.aut-4/4 RB
+
+
+7
+12:25-13:10
+u.anal.cyfr UT
+wf-3/3 #wd3
+j.polski LD
+u.anal.cyfr UT
+pr.urz.aut-2/4 SBpr.urz.aut-4/4 RB
+
+
+8
+13:15-14:00
+matematyka KZ
+j.polski LD
+j.angielski-1/3 KAwf-2/3 KCwf-3/3 #wd3
+urz.ukł.aut MR
+j.angielski-1/3 KAwf-2/3 KCwf-3/3 #wd3
+
+
+9
+14:05-14:50
+r_matematyka KZ
+z_angielski-1/3 EFj.angielski-2/3 KA
+wf-1/3 KBz_angielski-2/3 EF
+j.polski LD
+zaj. wych. KA
+
+
+10
+14:55-15:40
+historia MK
+wf-1/3 KBwf-2/3 KC
+u.anal.cyfr UT
+wf-1/3 KBj.niemiecki-2/3 NA
+j.niemiecki-1/2 KYr_fizyka-2/2 MJ
+
+
+11
+15:45-16:30
+religia PI
+dział.gospod AP
+u.anal.cyfr UT
+r_matematyka KZ
+pr.urz.aut-1/4 MRpr.urz.aut-3/4 SB
+
+
+12
+16:45-17:30
+pr.el i elek-1/4 Krpr.el i elek-2/4 JD
+matematyka KZ
+urz.ukł.aut MR
+p.aut.reg SB
+pr.urz.aut-1/4 MRpr.urz.aut-3/4 SB
+
+
+13
+17:35-18:20
+pr.el i elek-1/4 Krpr.el i elek-2/4 JD
+religia PI
+urz.ukł.aut MR
+p.aut.reg SB
+pr.urz.aut-1/4 MRpr.urz.aut-3/4 SB
+
+
+14
+18:25-19:10
+pr.el i elek-1/4 Krpr.el i elek-2/4 JD
+ 
+ 
+ 
+pr.urz.aut-1/4 MRpr.urz.aut-3/4 SB
