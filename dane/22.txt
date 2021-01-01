@@ -1,0 +1,122 @@
+1
+ 7:10- 7:55
+ 
+ 
+ 
+ 
+ 
+
+
+2
+ 8:00- 8:45
+ 
+ 
+ 
+ 
+ 
+
+
+3
+ 8:50- 9:35
+ 
+ 
+ 
+ 
+ 
+
+
+4
+ 9:40-10:25
+ 
+ 
+ 
+ 
+ 
+
+
+5
+10:45-11:30
+ 
+ 
+ 
+ 
+hist. i społ MK
+
+
+6
+11:35-12:20
+ 
+ 
+ 
+ 
+wf-1/2 PZj.angielski-2/2 BJ
+
+
+7
+12:25-13:10
+ 
+j.angielski-1/2 ED
+r_informat.-1/2 LMwf-2/2 KN
+pr.prog.apl.-1/2 CMj.angielski-2/2 BJ
+j.niemiecki-1/2 ASpr.baz dan.-2/2 PG
+
+
+8
+13:15-14:00
+wf-1/2 PZ
+pr.sys.oper-1/2 LŚpr.sys.oper-2/2 KU
+r_informat.-1/2 LMj.angielski-2/2 BJ
+pr.prog.apl.-1/2 CMwf-2/2 KN
+j.angielski-1/2 EDpr.baz dan.-2/2 PG
+
+
+9
+14:05-14:50
+j.angielski-1/2 EDwf-2/2 KN
+pr.sys.oper-1/2 LŚpr.sys.oper-2/2 KU
+j.polski WM
+wf-1/2 PZr_informat.-2/2 SJ
+j.polski WM
+
+
+10
+14:55-15:40
+pr.sieci kom-1/2 PLsieci-2/2 LE
+pr.sys.oper-1/2 LŚpr.sys.oper-2/2 KU
+matematyka KZ
+sieci-1/2 LEr_informat.-2/2 SJ
+religia PI
+
+
+11
+15:45-16:30
+pr.sieci kom-1/2 PLsieci-2/2 LE
+matematyka KZ
+str.inter.-1/2 KIpr.prog.apl.-2/2 MP
+sieci-1/2 LEj.niemiecki-2/2 NA
+sys. baz dan-1/2 Mistr.inter.-2/2 KI
+
+
+12
+16:45-17:30
+hist. i społ MK
+j.polski WM
+str.inter.-1/2 KIpr.prog.apl.-2/2 MP
+matematyka KZ
+sys. baz dan-1/2 Mistr.inter.-2/2 KI
+
+
+13
+17:35-18:20
+pr.baz dan.-1/2 PGpr.sieci kom-2/2 PL
+zaj. wych. WI
+sys. baz dan-2/2 Mi
+r_matematyka KZ
+ 
+
+
+14
+18:25-19:10
+pr.baz dan.-1/2 PGpr.sieci kom-2/2 PL
+religia PI
+sys. baz dan-2/2 Mi

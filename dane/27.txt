@@ -1,0 +1,86 @@
+1
+ 7:10- 7:55
+hist. i społ MH
+ 
+ 
+j.angielski-1/3 EDj.niemiecki-2/3 NP
+ 
+
+
+2
+ 8:00- 8:45
+hist. i społ MH
+ 
+ 
+j.niemiecki-1/3 ASwf-2/3 BM
+ 
+
+
+3
+ 8:50- 9:35
+r_matematyka KZ
+r_informat.-2/3 MP
+ 
+religia GU
+wf-1/3 BMj.niemiecki-2/3 NP
+
+
+4
+ 9:40-10:25
+matematyka KZ
+hist. i społ MH
+wf-1/3 BM
+j.polski WM
+matematyka KZ
+
+
+5
+10:45-11:30
+j.polski WM
+religia GU
+matematyka KZ
+wf-1/3 BMj.angielski-2/3 AG
+r_matematyka KZ
+
+
+6
+11:35-12:20
+r_informat.-1/3 ZNr_informat.-2/3 MP
+j.angielski-1/3 EDj.niemiecki-2/3 NP
+j.niemiecki-1/3 ASj.angielski-2/3 AG
+matematyka KZ
+zaj. wych. BM
+
+
+7
+12:25-13:10
+j.angielski-1/3 EDwf-3/3 #wd1
+j.niemiecki-1/3 ASj.angielski-2/3 AG
+j.polski WM
+r_informat.-1/3 ZNwf-3/3 #wd1
+j.angielski-1/3 EDwf-2/3 BMwf-3/3 #wd1
+
+
+8
+13:15-14:00
+ 
+r_matematyka KZ
+j.polski WM
+ 
+r_informat.-1/3 ZNr_informat.-2/3 MP
+
+
+9
+14:05-14:50
+ 
+r_matematyka KZ
+r_informat.-1/3 ZNr_informat.-2/3 MP
+ 
+j.angielski-2/3 AG
+
+
+10
+14:55-15:40
+ 
+wf-2/3 BM
+r_informat.-1/3 ZNr_informat.-2/3 MP

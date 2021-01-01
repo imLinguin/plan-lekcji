@@ -1,0 +1,124 @@
+1
+ 7:10- 7:55
+ 
+ 
+ 
+ 
+ 
+
+
+2
+ 8:00- 8:45
+ 
+ 
+ 
+ 
+ 
+
+
+3
+ 8:50- 9:35
+ 
+ 
+ 
+ 
+ 
+
+
+4
+ 9:40-10:25
+ 
+ 
+ 
+ 
+ 
+
+
+5
+10:45-11:30
+ 
+ 
+ 
+ 
+ 
+
+
+6
+11:35-12:20
+ 
+ 
+j.angielski-2/3 EF
+ 
+ 
+
+
+7
+12:25-13:10
+wf-2/3 BMwf-3/3 #wd1
+zaj. wych. NP
+wf-2/3 BM
+wf-1/3 KNj.angielski-2/3 EFwf-3/3 #wd1
+wf-1/3 KNwf-3/3 #wd1
+
+
+8
+13:15-14:00
+wf-1/3 KNj.angielski-2/3 EF
+j.polski MW
+j.polski MW
+matematyka Bi
+j.angielski-1/3 MMsieci-2/3 LE
+
+
+9
+14:05-14:50
+j.angielski-1/3 MMj.niemiecki-2/3 NP
+j.angielski-1/3 MMpr.sieci kom-2/3 PL
+matematyka Bi
+j.polski MW
+pr.sys.oper-1/3 LŚsieci-2/3 LE
+
+
+10
+14:55-15:40
+matematyka Bi
+j.niemiecki-1/3 NPpr.sieci kom-2/3 PL
+r_matematyka Bi
+religia PI
+pr.sys.oper-1/3 LŚr_informat.-2/3 SJ
+
+
+11
+15:45-16:30
+r_informat.-1/2 LMsys. baz dan-2/2 Mi
+sys. baz dan-1/3 Miwf-2/3 BM
+pr.prog.apl.-1/2 CMpr.baz dan.-2/2 PG
+pr.sieci kom-1/2 PLpr.prog.apl.-2/2 MP
+pr.sys.oper-1/3 LŚr_informat.-2/3 SJ
+
+
+12
+16:45-17:30
+r_informat.-1/2 LMsys. baz dan-2/2 Mi
+sys. baz dan-1/3 Mipr.sys.oper-2/3 KU
+pr.prog.apl.-1/2 CMpr.baz dan.-2/2 PG
+pr.sieci kom-1/2 PLpr.prog.apl.-2/2 MP
+hist. i społ DZ
+
+
+13
+17:35-18:20
+religia PI
+pr.baz dan.-1/3 PGpr.sys.oper-2/3 KU
+str.inter.-1/2 KI
+sieci-1/3 LE
+str.inter.-2/2 KI
+
+
+14
+18:25-19:10
+hist. i społ DZ
+pr.baz dan.-1/3 PGpr.sys.oper-2/3 KU
+str.inter.-1/2 KI
+sieci-1/3 LE
+str.inter.-2/2 KI
