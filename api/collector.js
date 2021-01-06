@@ -13,6 +13,13 @@ module.exports = async () => {
     const $ = cheerio.load(await page.content());
     content = $(".tabela").text().trim().split("\n");
     content.splice(0, 9);
+
+    for (let j = 0; j < content.length; j++) {
+      if (!content[j].match("BHP"))
+        content[j] = content[j].replace(/[A-Z](Ś|[a-z]|[A-Z])/g, "");
+      content[j].trim();
+    }
+
     await fs.writeFile(`./dane/${i}.txt`, content.join("\n"));
   }
   await browser.close();
