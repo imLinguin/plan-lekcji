@@ -9,9 +9,9 @@ Express api for school project
 - [puppeteer](https://www.npmjs.com/package/puppeteer)
 
 ### (TODO) Do zrobienia:
-* [ ] Grupy klasowe
+* [x] Grupy klasowe
 * [x] Endpoint do aktualizacji planu ze szkolnej strony
-CDN..
+* [ ] Zrobienie testów jednostkowych itd..
 
 ### ENDPOINTS:
 #### a) **GET** /plany/**_id_**?
