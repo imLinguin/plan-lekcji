@@ -13,22 +13,21 @@ module.exports = async (id, day, group) => {
     let n = text[line - 1];
     if (!n) break;
 
-    if (group !== 0) {
+    if (group[0] !== "0") {
       let target = new RegExp(/-\d\/\d/g).exec(n);
       if (target) {
         while (n.match(/-\d\/\d/g)) {
           target = new RegExp(/-\d\/\d/g).exec(n);
-
           let temp = n.substring(target.index, target.index + 4);
-          temp = temp.split("/");
-
-          let foundGroup = Math.abs(Number(temp[0]));
-          if (foundGroup === group) {
-            n = n.substring(0, target.index);
-            break;
+          temp = temp.substr(1);
+          let found = false;
+          for (let k = 0; k < group.length; k++) {
+            if (temp === group[k]) {
+              n = n.substring(0, target.index);
+              found = true;
+            }
           }
-
-          n = n.substr(target.index + 4);
+          if (!found) n = n.substr(target.index + 4);
         }
       }
     }
