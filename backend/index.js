@@ -9,7 +9,7 @@ app.use(morgan("tiny"));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("<h1>Go 🏠<h1>");
+  res.send('<h1 style="text-align: center; font-size: 5em;">Go 🏠</h1>');
 });
 
 app.use("/plan", plan);

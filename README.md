@@ -1,9 +1,10 @@
 # plan-lekcji
+
 Szkolny projekt na wystawę prac uczniów.
 
-# Opis
-.... DO zrobienia ....
+## Opis
 
+.... DO zrobienia ....
 
 ## Autorzy
 
