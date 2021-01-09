@@ -6,7 +6,7 @@ function createWindow() {
     title: "Plan lekcji",
     width: 800,
     height: 400,
-    icon: "",
+    icon: "", //Trzeba dodać ikonkę
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: true,
