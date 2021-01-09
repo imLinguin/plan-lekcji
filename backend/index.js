@@ -3,7 +3,6 @@ const app = express();
 const morgan = require("morgan");
 require("dotenv").config();
 const plan = require("./handlers/plan");
-//require("./api/collector")();
 app.disable("x-powered-by");
 app.use(morgan("tiny"));
 app.use(express.json());
