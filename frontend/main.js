@@ -1,4 +1,4 @@
-const { BrowserWindow, app } = require("electron");
+const { BrowserWindow, app, nativeTheme } = require("electron");
 const path = require("path");
 let window;
 function createWindow() {
@@ -8,7 +8,7 @@ function createWindow() {
     height: 400,
     icon: "", //Trzeba dodać ikonkę
     webPreferences: {
-      nodeIntegration: true,
+      nodeIntegration: false,
       contextIsolation: true,
       devTools: true,
     },
@@ -19,6 +19,7 @@ function createWindow() {
 }
 app.setName("Plan Lekcji");
 app.whenReady().then(createWindow);
+nativeTheme.themeSource = "system";
 
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
