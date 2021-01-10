@@ -1,6 +1,6 @@
 const fs = require("fs/promises");
 const days = require("../days.json");
-module.exports = async (id, day, group) => {
+module.exports = async (id, day, group, rel) => {
   const file = await fs.readFile(`./dane/${id}.txt`, "utf-8");
   let text = file;
   text = text.split("\n");
@@ -12,7 +12,7 @@ module.exports = async (id, day, group) => {
     line = Number(line);
     let n = text[line - 1];
     if (!n) break;
-
+    if (!rel && n.indexOf("religia") !== -1) n = "";
     if (group[0] !== "0") {
       let target = new RegExp(/-\d\/\d/g).exec(n);
       if (target) {
