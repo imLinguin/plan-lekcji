@@ -11,4 +11,4 @@ Szkolny projekt na wystawę prac uczniów.
 - Aleksander Baran
 - Paweł Lidwin
 
-PS. klasa 2hs
+PS. klasa 2HS
