@@ -4,8 +4,8 @@ let window;
 function createWindow() {
   window = new BrowserWindow({
     title: "Plan lekcji",
-    width: 800,
-    height: 400,
+    width: 500,
+    height: 750,
     icon: "", //Trzeba dodać ikonkę
     webPreferences: {
       nodeIntegration: false,
