@@ -4,11 +4,11 @@ Szkolny projekt na wystawę prac uczniów.
 
 ## Opis
 
-.... DO zrobienia ....
+.... Do zrobienia ....
 
 ## Autorzy
 
-- Aleksander Baran
-- Paweł Lidwin
+- Aleksander Baran ( front-end )
+- Paweł Lidwin ( back-end )
 
-PS. klasa 2HS
+## ZSE 2HS
