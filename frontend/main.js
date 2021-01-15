@@ -6,7 +6,7 @@ function createWindow() {
     title: "Plan lekcji",
     width: 500,
     height: 750,
-    icon: "", //Trzeba dodać ikonkę
+    icon: "content/images/logo.png",
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
