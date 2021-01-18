@@ -3,11 +3,12 @@ body {
   color: #ffffff;
   margin: auto 0;
   text-align: center;
+  background: #202225;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #333333;
+    background: #202225;
     color: #ffffff;
   }
 }
@@ -17,4 +18,57 @@ body {
     background: #dddddd;
     color: #000000;
   }
+}
+
+header {
+  background-color: #202225;
+  display: inline-block;
+  user-select:none;
+}
+
+#logo {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 23px;
+  color: #35BEF9;
+}
+
+.border {
+  position: absolute;
+}
+
+.border-1 {
+  position:absolute;
+  top: -10px;
+  width: 286px;
+  height: 4.4px;
+  background: #D3293C;
+  border-radius: 10px;
+}
+
+.border-2 {
+  position:absolute;
+  top: -1px;
+  width: 25px;
+  height: 4.4px;
+  background: #D3293C;
+  border-radius: 10px;
+  transform:rotate(54deg);
+  left: 278px;
+}
+
+.border-3 {
+  position:absolute;
+  top: 9px;
+  left: 296px;
+  width: 198px;
+  height: 4.4px;
+  background: #D3293C;
+  border-radius: 10px;
 }

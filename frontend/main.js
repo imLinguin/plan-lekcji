@@ -1,11 +1,12 @@
-const { BrowserWindow, app, nativeTheme } = require("electron");
+const { BrowserWindow, app } = require("electron");
 const path = require("path");
 let window;
 function createWindow() {
   window = new BrowserWindow({
     title: "Plan lekcji",
     width: 500,
-    height: 750,
+    height: 700,
+    resizable:false,
     icon: "content/images/logo.png",
     webPreferences: {
       nodeIntegration: false,
@@ -19,7 +20,6 @@ function createWindow() {
 }
 app.setName("Plan Lekcji");
 app.whenReady().then(createWindow);
-nativeTheme.themeSource = "system";
 app.setAppUserModelId("Plan Lekcji");
 
 app.on("window-all-closed", () => {
