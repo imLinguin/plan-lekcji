@@ -20,6 +20,7 @@ function createWindow() {
 app.setName("Plan Lekcji");
 app.whenReady().then(createWindow);
 nativeTheme.themeSource = "system";
+app.setAppUserModelId("Plan Lekcji");
 
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
