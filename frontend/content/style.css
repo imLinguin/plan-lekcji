@@ -72,3 +72,9 @@ h1 {
   background: #D3293C;
   border-radius: 10px;
 }
+
+.date{
+  color: #D3293C;
+  font-size: xx-large;
+  margin-right:6.5em;
+}
