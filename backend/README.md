@@ -15,9 +15,9 @@ Express api for school project
 * [ ] Zrobienie testów jednostkowych itd.. (opcjonalne)
 
 ### ENDPOINTS:
-#### a) **GET** /plany/**_id_**?
-- day, dzień tygodnia - od 1 do 5
-- group, grupa/grupy w klasie po przecinku - np **2/2,2/4**
-- rel,czy ktoś uczęszcza na lekcje religii - **true/false**,
-#### b) **PUT** /updateall?
-- key, hasło do aktualizacji podawane w pliku .env
+- **GET** /plany/**_id_**?
+  - day, dzień tygodnia - od 1 do 5
+  - group, grupa/grupy w klasie po przecinku - np **2/2,2/4**
+  - rel,czy ktoś uczęszcza na lekcje religii - **true/false**,
+- **PUT** /updateall?
+  - key, hasło do aktualizacji podawane w pliku .env
