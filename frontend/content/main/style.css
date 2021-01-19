@@ -20,6 +20,11 @@ body {
   }
 }
 
+@font-face {
+  font-family: digital-clock;
+  src: url(../fonts/Digital-Clock/DS-DIGI.TTF);
+}
+
 
 header {
   background-color: #202225;
@@ -92,13 +97,30 @@ h1 {
 
 canvas {
   position: absolute;
-  right: 6px;
-  bottom: 394px;
+  right: 15px;
+  bottom: 462px;
 }
 
 .clock {
-  position:absolute;
-  left: 302px;
-  top:90px;
+  position: absolute;
+  left: 318px;
+  top: 86px;
   z-index: 4;
+  user-select: none;
+  font-family: digital-clock;
+  font-size: 23px;
+  color: #35BEF9;
+}
+
+h2 {
+  font-size: 14.5px;
+  color: #D3293C;
+  font-weight: bold;
+  position: absolute;
+  right: 382px;
+  bottom: 530px;
+}
+
+.current-lesson {
+
 }
