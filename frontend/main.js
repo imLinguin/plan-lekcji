@@ -35,7 +35,7 @@ function customizationPopup()
     height:200,
     resizable:false,
     frame:false,
-    icon:"",
+    icon:"content/images/customization-icon.png",
     webPreferences:{
       nodeIntegration:false,
       contextIsolation:true,
