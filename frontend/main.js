@@ -29,11 +29,11 @@ function createWindow() {
 function customizationPopup() {
   popup = new BrowserWindow({
     title: "Personalizacja",
-    width: 1000,
-    height: 500,
+    width: 400,
+    height: 200,
     resizable: false,
-    frame: true,
-    icon: "",
+    frame: false,
+    icon: "content/images/customization-icon.png",
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
