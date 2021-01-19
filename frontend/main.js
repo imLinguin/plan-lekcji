@@ -3,8 +3,7 @@ const fs = require("fs");
 const path = require("path");
 let window;
 let popup;
-function QuitApp()
-{
+function QuitApp() {
   if (process.platform !== "darwin") {
     app.quit();
   }
@@ -14,62 +13,74 @@ function createWindow() {
     title: "Plan lekcji",
     width: 500,
     height: 700,
-    resizable:false,
+    resizable: false,
     icon: "content/images/logo.png",
     webPreferences: {
-      nodeIntegration: false,
-      contextIsolation: true,
+      nodeIntegration: true,
+      contextIsolation: false,
       devTools: true,
     },
   });
 
-  window.loadFile(path.join(__dirname, "content","main", "index.html"));
-  window.setMenuBarVisibility(false)
+  window.loadFile(path.join(__dirname, "content", "main", "index.html"));
+  window.setMenuBarVisibility(false);
   window.show();
 }
-function customizationPopup()
-{
+function customizationPopup() {
   popup = new BrowserWindow({
-    title:"Personalizacja",
-    width:400,
-    height:200,
-    resizable:false,
-    frame:false,
-    icon:"",
-    webPreferences:{
-      nodeIntegration:false,
-      contextIsolation:true,
-      devTools:true,
-    }
-  })
+    title: "Personalizacja",
+    width: 1000,
+    height: 500,
+    resizable: false,
+    frame: true,
+    icon: "",
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
+      devTools: true,
+    },
+  });
+
+  popup.loadFile(path.join(__dirname, "content", "popup", "popup.html"));
 }
 
 app.setName("Plan Lekcji");
-app.whenReady().then(()=>{
-  createWindow();
-  try{
-  if(fs.existsSync("preferences.json")){
-    console.log("Istnieje")
-  }
-  else{
-    customizationPopup();
-  }
-  window.on("closed",()=>{
-    QuitApp();
-  })
-}
-catch(error){}
-});
-//events
-
-
 app.setAppUserModelId("Plan Lekcji");
+app.whenReady().then(() => {
+  createWindow();
+  try {
+    if (fs.existsSync("preferences.json")) {
+    } else {
+      customizationPopup();
+    }
+    window.on("closed", () => {
+      QuitApp();
+    });
+  } catch (error) {}
+});
 
+//events
 app.on("window-all-closed", () => {
   QuitApp();
 });
 
-
-ipcMain.on("close-popup",()=>{
+ipcMain.on("closensave-popup", (from, data) => {
+  fs.writeFileSync(
+    path.join(__dirname, "preferences.json"),
+    JSON.stringify(data)
+  );
   popup.close();
-})
+});
+
+ipcMain.on("open-preferences", (event, args) => {
+  customizationPopup();
+});
+
+ipcMain.on("get-preferences", async (event) => {
+  let preferencje;
+  if (fs.existsSync(path.join(__dirname, "preferences.json"))) {
+    preferencje = fs.readFileSync(path.join(__dirname, "preferences.json"));
+    preferencje = await JSON.parse(preferencje);
+  }
+  event.returnValue = preferencje || null;
+});
