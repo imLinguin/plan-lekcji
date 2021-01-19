@@ -1,4 +1,4 @@
-const { BrowserWindow, app, ipcMain } = require("electron");
+const { BrowserWindow, app, ipcMain, session } = require("electron");
 const fs = require("fs");
 const path = require("path");
 let window;
@@ -19,6 +19,7 @@ function createWindow() {
       nodeIntegration: true,
       contextIsolation: false,
       devTools: true,
+      allowRunningInsecureContent: false,
     },
   });
 
@@ -38,6 +39,7 @@ function customizationPopup() {
       nodeIntegration: true,
       contextIsolation: false,
       devTools: true,
+      allowRunningInsecureContent: false,
     },
   });
 
@@ -49,27 +51,29 @@ app.setAppUserModelId("Plan Lekcji");
 app.whenReady().then(() => {
   createWindow();
   try {
-    if (fs.existsSync("preferences.json")) {
-    } else {
+    //Jeśli plik z preferencjami nie istnieje otwórz okno ustawień przy uruchomieni
+    if (!fs.existsSync("preferences.json")) {
       customizationPopup();
     }
+    //Jeśli główne okno zostało zamknięte zakończ proces
     window.on("closed", () => {
       QuitApp();
     });
   } catch (error) {}
 });
 
-//events
+//Zakończ proces jeśli wszystkie okna są zamknięte
 app.on("window-all-closed", () => {
   QuitApp();
 });
-
+//Zapisz preferencje do pliku jeśli kliknięto przycisk zapisz w ustawieniach
 ipcMain.on("closensave-popup", (from, data) => {
   fs.writeFileSync(
     path.join(__dirname, "preferences.json"),
     JSON.stringify(data)
   );
   popup.close();
+  window.reload();
 });
 
 ipcMain.on("open-preferences", (event, args) => {

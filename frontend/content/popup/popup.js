@@ -4,7 +4,7 @@ const restoreButton = document.querySelector(".restore");
 const religiaCheck = document.querySelector(".religia");
 let cache;
 cache = ipcRenderer.sendSync("get-preferences", null);
-SetPreferences(cache);
+if (cache) SetPreferences(cache);
 saveButton.addEventListener("click", () => {
   ipcRenderer.send("closensave-popup", {
     religia: religiaCheck.checked,

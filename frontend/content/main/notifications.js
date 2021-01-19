@@ -1,11 +1,6 @@
-const przycisk = document.querySelector(".notify");
-
-przycisk.addEventListener("click", () => {
+window.nextLessonNotify = (lekcja) => {
   let n = new Notification("Następna lekcja", {
-    icon:"../images/exclamation-mark.png",
-    body: "Ogólnie to dzisiaj nie ma lekcji ale test jest",
+    icon: "../images/exclamation-mark.png",
+    body: `Za chwilę ${lekcja} nie spóźnij się`,
   });
-  n.onclick = () => {
-    console.log("Kliknięto powiadomienie");
-  };
-});
+};

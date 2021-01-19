@@ -1,65 +1,75 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Paweł Lidwin, Aleksander Baran" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Lekcji</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Paweł Lidwin, Aleksander Baran">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plan Lekcji</title>
+    <!-- All Styles -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- All Styles -->
-  <link rel="stylesheet" href="style.css">
+    <!-- All Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="script.js" defer></script>
+    <script src="notifications.js" defer></script>
+    <script src="clock.js" defer></script>
+    <script src="api.js"></script>
+  </head>
 
-  <!-- All Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-  <script src="script.js" defer></script>
-  <script src="notifications.js" defer></script>
-  <script src="clock.js" defer></script>
-</head>
+  <body>
+    <header>
+      <div id="logo">
+        <h1>Plan Lekcji</h1>
+        <img
+          id="home-logo"
+          src="../images/logo.png"
+          width="60"
+          height="60"
+          alt="Logo"
+        />
+      </div>
+    </header>
 
-<body>
-  <header>
-    <div id="logo">
-      <h1>Plan Lekcji</h1>
-      <img id="home-logo" src="../images/logo.png" width="60" height="60" alt="Logo">
-    </div>
-  </header>
+    <section id="border">
+      <div class="border">
+        <div class="border-1"></div>
+        <div class="border-2"></div>
+        <div class="border-3"></div>
+      </div>
+    </section>
 
-  <section id="border">
-    <div class="border">
-      <div class="border-1"></div>
-      <div class="border-2"></div>
-      <div class="border-3"></div>
-    </div>
-  </section>
+    <section id="date">
+      <div class="date"></div>
+      <div class="day-of-week"></div>
+    </section>
 
-  <section id="date">
-    <div class="date"></div>
-    <div class="day-of-week"></div>
-  </section>
+    <section id="clock">
+      <div class="clock"></div>
+    </section>
 
-  <section id="clock">
-    <div class="clock"></div>
-  </section>
+    <article id="current-lesson">
+      <h2>Aktualnie trwa:</h2>
+      <div class="current-lesson">informatyka</div>
+    </article>
 
-  <article id="current-lesson">
-    <h2>Aktualnie trwa:</h2>
-    <div class="current-lesson">informatyka</div>
-  </article>
+    <section id="customization">
+      <button class="pref-button">
+        <img
+          src="../images/customization-logo.png"
+          width="60"
+          height="68"
+          alt="Customization Logo"
+        />
+      </button>
+    </section>
 
-  <section id="customization">
-    <button class="pref-button">
-      <img src="../images/customization-logo.png" width="60" height="68" alt="Customization Logo">
-    </button>
-  </section>
+    <section id="countdown-lesson-break">
+      <h3 class="countdown-lesson-text">Lekcja kończy się za:</h3>
+      <!--<h3 class="countdown-break-text">Przerwa kończy się za:</h3>-->
+      <div class="countdown-lesson-break">45:00</div>
+    </section>
 
-  <section id="countdown-lesson-break">
-    <h3 class="countdown-lesson-text">Lekcja kończy się za:</h3>
-    <!--<h3 class="countdown-break-text">Przerwa kończy się za:</h3>-->
-    <div class="countdown-lesson-break">45:00</div>
-  </section>
-
-  <footer></footer>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
