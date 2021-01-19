@@ -118,9 +118,53 @@ h2 {
   font-weight: bold;
   position: absolute;
   right: 382px;
-  bottom: 530px;
+  bottom: 528px;
 }
 
 .current-lesson {
+  font-size: 18px;
+  color: #35BEF9;
+  font-weight: bold;
+  position: absolute;
+  top: 130px;
+  left: 8px;
+}
 
+.pref-button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #D3293C;
+  user-select: none;
+}
+
+.countdown-lesson-text {
+  font-size: 14.5px;
+  color: #D3293C;
+  font-weight: bold;
+  position: absolute;
+  right: 12px;
+  top: 190px;
+}
+
+.countdown-break-text {
+  font-size: 14.5px;
+  color: #D3293C;
+  font-weight: bold;
+  position: absolute;
+  right: 12px;
+  top: 190px;
+}
+
+.countdown-lesson-break {
+  font-family: digital-clock;
+  font-size: 30px;
+  color: #35BEF9;
+  position: absolute;
+  right: 47px;
+  top: 228px;
 }

@@ -30,9 +30,9 @@ function customizationPopup() {
   popup = new BrowserWindow({
     title: "Personalizacja",
     width: 400,
-    height: 200,
+    height: 430,
     resizable: false,
-    frame: false,
+    frame: true,
     icon: "content/images/customization-icon.png",
     webPreferences: {
       nodeIntegration: true,
