@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dist": "electron-builder --x64 --ia32"
   },
-  "author": "Linguin i Olek Baran",
+  "author": "Linguin & Olek Baran",
   "license": "Apache-2.0 License",
   "devDependencies": {
     "electron": "^11.1.1",

@@ -170,3 +170,66 @@ canvas {
   right: 47px;
   top: 228px;
 }
+
+.border-end {
+  position: absolute;
+}
+
+.border-end-1 {
+  position: absolute;
+  top: 214px;
+  width: 160px;
+  left: 334px;
+  height: 4.4px;
+  background: #D3293C;
+  border-radius: 10px;
+}
+
+.border-end-2 {
+  position: absolute;
+  top: 224px;
+  width: 25px;
+  left: 318px;
+  height: 4.4px;
+  background: #D3293C;
+  border-radius: 10px;
+  transform: rotate(108deg);
+}
+
+.border-end-3 {
+  position: absolute;
+  top: 236px;
+  width: 4.4px;
+  left: 325px;
+  height: 55px;
+  background: #D3293C;
+  border-radius: 10px;
+}
+
+.border-end-4 {
+  position: absolute;
+  top: 288px;
+  width: 169px;
+  left: 325px;
+  height: 4.4px;
+  background: #D3293C;
+  border-radius: 10px;
+}
+
+h4 {
+  font-size: 13.5px;
+  color: #d3293c;
+  font-weight: bold;
+  position: absolute;
+  right: 6px;
+  top: 308px;
+}
+
+.countdown-end {
+  font-family: digital-clock;
+  font-size: 34px;
+  color: #35bef9;
+  position: absolute;
+  right: 48px;
+  top: 348px;
+}
