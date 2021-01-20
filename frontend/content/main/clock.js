@@ -4,6 +4,7 @@ function updateTimer(h, m) {
   target.setHours(h);
   target.setMinutes(m);
   target.setSeconds(0);
+  console.log(target)
 }
 function setup() {
   createCanvas(130, 130);
@@ -71,6 +72,7 @@ function updateLesson() {
   let minutes = minute();
   const currentLesson = document.querySelector(".current-lesson");
   const countdownLesson = document.querySelector(".countdown-lesson-text")
+  const fellfree = document.querySelector(".feel-free")
   let lekcje = {
     0: "7:10-7:55",
     1: "8:00-8:45",
@@ -95,22 +97,24 @@ function updateLesson() {
     //Sprawdzanie czy nie jest zbyt późno
     if (
       (hours > parseInt(od_godzina) ||
-      (hours === parseInt(od_godzina)) && minutes >= od_minuta) &&
+      (hours === parseInt(od_godzina) && minutes >= od_minuta)) &&
       (hours < do_godzina || (hours === do_godzina && minutes < do_minuta))
     ) {
-      
-      currentLesson.innerHTML = window.plan[i];
+      currentLesson.innerHTML = window.plan.array[i];
       updateTimer(do_godzina, do_minuta);
-      countdownLesson.innerHTML = "Lekcja kończy się za:"
+      countdownLesson.innerHTML = "Lekcja kończy się za:";
+      fellfree.style.display = "none"
       break;
-    } else if (hours <= parseInt(od_godzina) && minutes < parseInt(od_minuta)){
+    } else if (hours <= parseInt(od_godzina) && minutes <= parseInt(od_minuta)){
       console.log("TUTAJ")
+      console.log(minutes,od_minuta)
       let temp1 = lekcje[i + 2].split("-");
       let [od_godzina1, od_minuta1] = temp1[0].split(":");
       currentLesson.innerHTML = "Przerwa";
       countdownLesson.innerHTML = "Przerwa kończy się za:"
-      window.nextLessonNotify(window.plan[i+1])
+      window.nextLessonNotify(window.plan.array[i+1])
       updateTimer(parseInt(od_godzina1), parseInt(od_minuta1));
+      fellfree.style.display = "block"
       break;
     }
   }

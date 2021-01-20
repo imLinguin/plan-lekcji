@@ -10,17 +10,29 @@ router.get("/:klasa", async (req, res) => {
   group = group.split(",");
   let rel = req.query.rel ? req.query.rel === "true" : true;
 
-  if (Number(req.params.klasa) > 31 || Number(req.params.klasa) < 1) {
+  if (!req.params.klasa || Number(req.params.klasa) > 31 || Number(req.params.klasa) < 1) {
     res.status(404);
     res.json({ message: "Not Found" });
     return;
   }
   const { birthtime } = fs.statSync(`./dane/${req.params.klasa}.txt`);
   const plan = await parser(req.params.klasa, day, group, rel);
+  let last;
+  for(let i=0;i<plan.length; i++)
+  {
+    if(plan[i+1] === "" && plan[i])
+    {
+      last = i;
+      break;
+    }
+  }
+  if(last === 1)
+    last=null
   res.status(200);
   res.json({
     array: plan,
     updatedAt: birthtime,
+    lastLesson: last,
   });
 });
 module.exports = router;
