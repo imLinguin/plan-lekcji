@@ -137,12 +137,19 @@ canvas {
   position: absolute;
   bottom: 35px;
   right: 22px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   border: none;
   outline: none;
   cursor: pointer;
   background-color: #d3293c;
   user-select: none;
+}
+
+.customization-logo {
+  width: 45px;
+  height: 45px;
 }
 
 .countdown-text {
