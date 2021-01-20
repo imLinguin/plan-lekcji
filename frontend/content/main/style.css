@@ -283,6 +283,7 @@ footer > h5 {
   color: #d3293c;
   font-weight: 400;
   margin-top: 544px;
+  user-select: none;
 }
 
 .border-footer-1 {

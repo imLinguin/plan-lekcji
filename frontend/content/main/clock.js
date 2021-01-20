@@ -4,6 +4,7 @@ function updateTimer(h, m) {
   target.setHours(h);
   target.setMinutes(m);
   target.setSeconds(0);
+  console.log(target)
 }
 function setup() {
   createCanvas(130, 130);
@@ -52,14 +53,23 @@ function draw() {
       updateLesson();
     }
   }
+  strokeWeight(2);
+  beginShape(POINTS);
+  for (let a = 0; a < 360; a += 90) {
+    let angle = radians(a);
+    let x = cx + cos(angle) * secondsRadius;
+    let y = cy + sin(angle) * secondsRadius;
+    vertex(x, y);
+  }
+  endShape()
 }
 
 ipcRenderer.on("plan-ready", () => updateLesson());
 //Aktualizowanie aktualnej lekcji
+
 function updateLesson() {
-  console.log("HERE");
-  let hours = new Date().getHours();
-  let minutes = new Date().getMinutes();
+  let hours = hour();
+  let minutes = minute();
   const currentLesson = document.querySelector(".current-lesson");
   let lekcje = {
     0: "7:10-7:55",
@@ -82,24 +92,22 @@ function updateLesson() {
     let [od_godzina, od_minuta] = temp[0].split(":");
     let [do_godzina, do_minuta] = temp[1].split(":");
     //Sprawdzanie przedziału czy nie jest zbyt wcześnie
+    //Sprawdzanie czy nie jest zbyt późno
     if (
-      hours > parseInt(od_godzina) ||
-      (hours === parseInt(od_godzina) && minutes >= od_minuta)
+      (hours > parseInt(od_godzina) ||
+      (hours === parseInt(od_godzina)) && minutes >= od_minuta) &&
+      (hours <= do_godzina || (hours === do_godzina && minutes < do_minuta))
     ) {
-      //Sprawdzanie czy nie jest zbyt późno
-      if (
-        hours <= do_godzina ||
-        (hours === do_godzina && minutes < do_minuta)
-      ) {
-        currentLesson.innerHTML = window.plan[i] || "Brak lekcji";
-        updateTimer(do_godzina, do_minuta);
-        break;
-      }
-    } else {
-      let temp = lekcje[i + 1].split("-");
-      let [od_godzina, od_minuta] = temp[0].split(":");
+      
+      currentLesson.innerHTML = window.plan[i];
+      updateTimer(do_godzina, do_minuta);
+      break;
+    } else if (hours >= parseInt(od_godzina) && minutes <= parseInt(od_minuta)){
+      let temp1 = lekcje[i + 2].split("-");
+      console.log(temp1);
+      let [od_godzina1, od_minuta1] = temp1[0].split(":");
       currentLesson.innerHTML = "Przerwa";
-      updateTimer(od_godzina, od_minuta);
+      updateTimer(parseInt(od_godzina1), parseInt(od_minuta1));
     }
   }
 }
