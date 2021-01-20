@@ -4,7 +4,6 @@ function updateTimer(h, m) {
   target.setHours(h);
   target.setMinutes(m);
   target.setSeconds(0);
-  console.log(target)
 }
 function setup() {
   createCanvas(130, 130);
@@ -97,20 +96,20 @@ function updateLesson() {
     if (
       (hours > parseInt(od_godzina) ||
       (hours === parseInt(od_godzina)) && minutes >= od_minuta) &&
-      (hours <= do_godzina || (hours === do_godzina && minutes < do_minuta))
+      (hours < do_godzina || (hours === do_godzina && minutes < do_minuta))
     ) {
       
       currentLesson.innerHTML = window.plan[i];
       updateTimer(do_godzina, do_minuta);
       countdownLesson.innerHTML = "Lekcja kończy się za:"
       break;
-    } else if (hours >= parseInt(od_godzina) && minutes <= parseInt(od_minuta)){
+    } else if (hours <= parseInt(od_godzina) && minutes < parseInt(od_minuta)){
       console.log("TUTAJ")
       let temp1 = lekcje[i + 2].split("-");
-      console.log(temp1);
       let [od_godzina1, od_minuta1] = temp1[0].split(":");
       currentLesson.innerHTML = "Przerwa";
       countdownLesson.innerHTML = "Przerwa kończy się za:"
+      window.nextLessonNotify(window.plan[i+1])
       updateTimer(parseInt(od_godzina1), parseInt(od_minuta1));
       break;
     }
