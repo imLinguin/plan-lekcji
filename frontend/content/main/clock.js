@@ -71,6 +71,7 @@ function updateLesson() {
   let hours = hour();
   let minutes = minute();
   const currentLesson = document.querySelector(".current-lesson");
+  const countdownLesson = document.querySelector(".countdown-lesson-text")
   let lekcje = {
     0: "7:10-7:55",
     1: "8:00-8:45",
@@ -101,13 +102,17 @@ function updateLesson() {
       
       currentLesson.innerHTML = window.plan[i];
       updateTimer(do_godzina, do_minuta);
+      countdownLesson.innerHTML = "Lekcja kończy się za:"
       break;
     } else if (hours >= parseInt(od_godzina) && minutes <= parseInt(od_minuta)){
+      console.log("TUTAJ")
       let temp1 = lekcje[i + 2].split("-");
       console.log(temp1);
       let [od_godzina1, od_minuta1] = temp1[0].split(":");
       currentLesson.innerHTML = "Przerwa";
+      countdownLesson.innerHTML = "Przerwa kończy się za:"
       updateTimer(parseInt(od_godzina1), parseInt(od_minuta1));
+      break;
     }
   }
 }
