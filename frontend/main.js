@@ -88,3 +88,7 @@ ipcMain.on("get-preferences", async (event) => {
   }
   event.returnValue = preferencje || null;
 });
+
+ipcMain.on("plan-fetched", (event) => {
+  event.reply("plan-ready");
+});

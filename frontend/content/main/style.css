@@ -105,7 +105,7 @@ canvas {
 
 .clock {
   position: absolute;
-  left: 318px;
+  right: 136px;
   top: 86px;
   z-index: 4;
   user-select: none;
