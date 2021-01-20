@@ -91,7 +91,7 @@ h1 {
 .day-of-week {
   color: #d3293c;
   margin-right: 378px;
-  margin-top: -6px;
+  margin-top: -5px;
   font-size: 15px;
   font-weight: 600;
 }
@@ -134,7 +134,7 @@ canvas {
 
 .pref-button {
   position: absolute;
-  bottom: 15px;
+  bottom: 65px;
   right: 15px;
   border-radius: 50%;
   border: none;
@@ -232,4 +232,47 @@ h4 {
   position: absolute;
   right: 48px;
   top: 348px;
+}
+
+.border-plan {
+  position: absolute;
+}
+
+.border-plan-1 {
+  position: absolute;
+  top: 80px;
+  width: 240px;
+  height: 4.4px;
+  background: #D3293C;
+  border-radius: 10px;
+}
+
+.border-plan-2 {
+  position: absolute;
+  top: 91px;
+  left: 232px;
+  width: 30px;
+  height: 4.4px;
+  background: #D3293C;
+  border-radius: 10px;
+  transform: rotate(54deg);
+}
+
+.border-plan-3 {
+  position: absolute;
+  top: 102px;
+  left: 252.15px;
+  width: 4.4px;
+  height: 400px;
+  background: #D3293C;
+  border-radius: 10px;
+}
+
+.border-plan-4 {
+  position: absolute;
+  top: 498px;
+  width: 255px;
+  height: 4.4px;
+  background: #D3293C;
+  border-radius: 10px;
 }
