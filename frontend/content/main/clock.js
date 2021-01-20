@@ -96,9 +96,7 @@ function updateLesson() {
     //Sprawdzanie przedziału czy nie jest zbyt wcześnie
     //Sprawdzanie czy nie jest zbyt późno
     if (
-      (hours > parseInt(od_godzina) ||
-      (hours === parseInt(od_godzina) && minutes >= od_minuta)) &&
-      (hours < do_godzina || (hours === do_godzina && minutes < do_minuta))
+      (hours >= od_godzina && hours<= do_godzina)
     ) {
       currentLesson.innerHTML = window.plan.array[i];
       updateTimer(do_godzina, do_minuta);
