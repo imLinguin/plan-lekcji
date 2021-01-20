@@ -125,18 +125,18 @@ canvas {
 }
 
 .current-lesson {
-  font-size: 18px;
+  font-size: 20px;
   color: #35bef9;
   font-weight: bold;
   position: absolute;
-  top: 130px;
-  left: 8px;
+  top: 128px;
+  left: 3.5px;
 }
 
 .pref-button {
   position: absolute;
-  bottom: 65px;
-  right: 15px;
+  bottom: 35px;
+  right: 22px;
   border-radius: 50%;
   border: none;
   outline: none;
@@ -231,7 +231,7 @@ h4 {
   font-size: 34px;
   color: #35bef9;
   position: absolute;
-  right: 48px;
+  right: 50px;
   top: 348px;
 }
 
@@ -278,7 +278,7 @@ h4 {
   border-radius: 10px;
 }
 
-footer > h5 {
+.footer-text {
   font-size: 13.5px;
   color: #d3293c;
   font-weight: 400;
@@ -335,4 +335,25 @@ footer > h5 {
   height: 4.4px;
   background: #D3293C;
   border-radius: 10px;
+}
+
+h6 {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 7px;
+  left: 194.5px;
+  font-size: 13.5px;
+  color: #35bef9;
+  font-weight: 500;
+}
+
+.feel-free {
+  position: absolute;
+  right: 41.5px;
+  top: 47px;
+  user-select: text;
+  font-size: 17px;
+  color: #35bef9;
+  font-weight: bold;
 }
