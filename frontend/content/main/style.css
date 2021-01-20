@@ -145,22 +145,13 @@ canvas {
   user-select: none;
 }
 
-.countdown-lesson-text {
+.countdown-text {
   font-size: 14.5px;
   color: #d3293c;
   font-weight: bold;
   position: absolute;
   right: 12px;
-  top: 190px;
-}
-
-.countdown-break-text {
-  font-size: 14.5px;
-  color: #d3293c;
-  font-weight: bold;
-  position: absolute;
-  right: 12px;
-  top: 190px;
+  top: 189px;
 }
 
 .countdown-lesson-break {
@@ -241,7 +232,7 @@ h4 {
 
 .border-plan-1 {
   position: absolute;
-  top: 80px;
+  top: 75px;
   width: 260px;
   height: 4.4px;
   background: #D3293C;
@@ -250,7 +241,7 @@ h4 {
 
 .border-plan-2 {
   position: absolute;
-  top: 91px;
+  top: 86px;
   left: 252px;
   width: 30px;
   height: 4.4px;
@@ -261,7 +252,7 @@ h4 {
 
 .border-plan-3 {
   position: absolute;
-  top: 102px;
+  top: 97px;
   left: 272.15px;
   width: 4.4px;
   height: 400px;
@@ -271,7 +262,7 @@ h4 {
 
 .border-plan-4 {
   position: absolute;
-  top: 498px;
+  top: 493px;
   width: 275px;
   height: 4.4px;
   background: #D3293C;
