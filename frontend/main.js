@@ -1,52 +1,17 @@
-const {
-  BrowserWindow,
-  app,
-  ipcMain,
-  Tray,
-  Menu,
-  Notification,
-} = require("electron");
+const { BrowserWindow, app, ipcMain } = require("electron");
 const fs = require("fs");
 const path = require("path");
 let window;
 let popup;
-let tray;
 function QuitApp() {
   if (process.platform !== "darwin") {
-    tray.destroy();
-    app.exit();
+    app.quit();
   }
 }
 function RefreshMain() {
   if (window) {
     window.reload();
   }
-}
-function createTray() {
-  tray = new Tray(path.join(__dirname, "content", "images", "logo.png"));
-  const contextMenu = Menu.buildFromTemplate([
-    {
-      label: "Open",
-      type: "normal",
-      click() {
-        window.minimize();
-        window.focus();
-      },
-    },
-    {
-      label: "Exit",
-      type: "normal",
-      click() {
-        QuitApp();
-      },
-    },
-  ]);
-  tray.setToolTip("Plan Lekcji");
-  tray.setContextMenu(contextMenu);
-  tray.on("double-click", () => {
-    window.minimize();
-    window.focus();
-  });
 }
 function createWindow() {
   window = new BrowserWindow({
@@ -89,7 +54,6 @@ function customizationPopup() {
 app.setName("Plan Lekcji");
 app.setAppUserModelId("Plan Lekcji");
 app.whenReady().then(() => {
-  createTray();
   createWindow();
   try {
     //Jeśli plik z preferencjami nie istnieje otwórz okno ustawień przy uruchomieni
@@ -98,8 +62,7 @@ app.whenReady().then(() => {
     }
     //Jeśli główne okno zostało zamknięte zamiast tego je ukryj proces
     window.on("close", (e) => {
-      e.preventDefault();
-      window.hide();
+      QuitApp();
     });
   } catch (error) {}
 });
