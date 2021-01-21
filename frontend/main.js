@@ -49,6 +49,7 @@ function customizationPopup() {
   });
 
   popup.loadFile(path.join(__dirname, "content", "popup", "popup.html"));
+  popup.setMenuBarVisibility(false);
 }
 
 app.setName("Plan Lekcji");

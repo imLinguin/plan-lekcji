@@ -5,19 +5,46 @@
   <meta charset="UTF-8">
   <meta name="author" content="Paweł Lidwin, Aleksander Baran">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plan Lekcji</title>
+  <title>Ustawienia</title>
+
   <!-- All Styles -->
   <link rel="stylesheet" href="popup.css">
 
   <!-- All Scripts -->
   <script src="popup.js" defer></script>
+
 </head>
 
 <body>
+
+  <header>
+    <div id="logo">
+      <h1>Ustawienia</h1>
+      <img id="home-logo" src="../images/logo.png" width="57" height="57" alt="Logo" />
+    </div>
+  </header>
+
+  <section id="border-popup">
+    <div class="border-popup">
+      <div class="border-popup-1"></div>
+      <div class="border-popup-2"></div>
+      <div class="border-popup-3"></div>
+    </div>
+  </section>
+
+  <article id="religia">
   <label for="religia">Religia?</label>
   <input type="checkbox" name="religia" class="religia">
-  <button class="save">Save</button>
-  <button class="restore">Restore</button>
-</body>
+  </article>
 
+  <footer>
+    <button class="save">
+      <h2 class="save-text">Save</h2>
+    </button>
+    <button class="restore">
+      <h2 class="restore-text">Restore</h2>
+    </button>
+  </footer>
+
+</body>
 </html>
