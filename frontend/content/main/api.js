@@ -1,6 +1,6 @@
 async function fetchData({ religia, grupa, klasa }) {
   window.plan = await fetch(
-    `http://localhost:8080/plan/${13}?group=${"1/2"}&rel=${true}`
+    `http://localhost:8080/plan/${11}?group=${"1/2"}&rel=${true}`
   )
     .then((d) => d.json())
     .catch((er) => {

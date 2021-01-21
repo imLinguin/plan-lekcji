@@ -8,6 +8,11 @@ function QuitApp() {
     app.quit();
   }
 }
+function RefreshMain() {
+  if (window) {
+    window.reload();
+  }
+}
 function createWindow() {
   window = new BrowserWindow({
     title: "Plan lekcji",
@@ -73,7 +78,7 @@ ipcMain.on("closensave-popup", (from, data) => {
     JSON.stringify(data)
   );
   popup.close();
-  window.reload();
+  RefreshMain();
 });
 
 ipcMain.on("open-preferences", (event, args) => {
@@ -91,4 +96,15 @@ ipcMain.on("get-preferences", async (event) => {
 
 ipcMain.on("plan-fetched", (event) => {
   event.reply("plan-ready");
+});
+
+ipcMain.on("refresh-main", () => {
+  RefreshMain();
+});
+
+ipcMain.on("render-po-lekcjach", () => {
+  if (window)
+    window.loadFile(
+      path.join(__dirname, "content", "po-lekcjach", "po-lekcjach.html")
+    );
 });

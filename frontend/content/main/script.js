@@ -28,3 +28,8 @@ const prefButton = document.querySelector(".pref-button");
 prefButton.addEventListener("click", () => {
   ipcRenderer.send("open-preferences", null);
 });
+
+
+document.querySelector(".refresh-button").addEventListener("click",()=>{
+  ipcRenderer.send("refresh-main")
+})
