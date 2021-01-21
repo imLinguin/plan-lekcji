@@ -91,7 +91,7 @@ footer {
     width: 90px;
     height: 40px;
     position: absolute;
-    left: 40px;
+    right: 40px;
     bottom: -10px;
 }
 
@@ -104,7 +104,7 @@ footer {
     width: 90px;
     height: 40px;
     position: absolute;
-    right: 40px;
+    left: 40px;
     bottom: -10px;
 }
 
@@ -112,6 +112,9 @@ footer {
     font-size: 14px;
     color: #ffffff;
     font-weight: 500;
+    position: absolute;
+    top: -1px;
+    left: 20px;
 }
 
 .restore-text {
@@ -162,4 +165,12 @@ footer {
     position: absolute;
     left: 10px;
     top: 168px;
+}
+
+.thunder {
+    position: absolute;
+    bottom: -16px;
+    left: -26px;
+    width: 52px;
+    height: 52px;
 }
