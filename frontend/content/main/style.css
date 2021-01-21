@@ -135,7 +135,7 @@ canvas {
 
 .pref-button {
   position: absolute;
-  bottom: 35px;
+  bottom: 65px;
   right: 22px;
   width: 65px;
   height: 65px;
@@ -354,4 +354,24 @@ h6 {
   font-size: 17px;
   color: #35bef9;
   font-weight: bold;
+}
+
+.refresh-button {
+  position: absolute;
+  bottom: 160px;
+  right: 22px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #d3293c;
+  user-select: none;
+}
+
+.refresh-logo {
+  width: 45px;
+  height: 45px;
+  margin-top: 9px;
 }
