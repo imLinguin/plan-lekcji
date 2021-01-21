@@ -141,8 +141,13 @@ function updateLesson() {
         countdownText.innerHTML = "Lekcja kończy się za:";
         fellfree.style.display = "none";
         updateTimer(do_godzina, do_minuta);
-        if (window.nextLessonNotify(window.plan.array[i]))
+        if (
+          window.plan.array[i] &&
+          (now - poczatek) < 5000 * 60
+        ) {
+          console.log(now-poczatek)
           window.nextLessonNotify(window.plan.array[i]);
+        }
       } else if (now >= koniec && now <= nextPoczatek) {
         currentLesson.innerHTML = "Przerwa";
         countdownText.innerHTML = "Przerwa kończy się za:";

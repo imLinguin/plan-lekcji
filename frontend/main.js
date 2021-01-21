@@ -13,8 +13,8 @@ let popup;
 let tray;
 function QuitApp() {
   if (process.platform !== "darwin") {
-    app.exit();
     tray.destroy();
+    app.exit();
   }
 }
 function RefreshMain() {
@@ -31,8 +31,6 @@ function createTray() {
       click() {
         window.minimize();
         window.focus();
-        tray.destroy();
-        tray = null;
       },
     },
     {
@@ -48,8 +46,6 @@ function createTray() {
   tray.on("double-click", () => {
     window.minimize();
     window.focus();
-    tray.destroy();
-    tray = null;
   });
 }
 function createWindow() {
@@ -93,6 +89,7 @@ function customizationPopup() {
 app.setName("Plan Lekcji");
 app.setAppUserModelId("Plan Lekcji");
 app.whenReady().then(() => {
+  createTray();
   createWindow();
   try {
     //Jeśli plik z preferencjami nie istnieje otwórz okno ustawień przy uruchomieni
@@ -102,7 +99,6 @@ app.whenReady().then(() => {
     //Jeśli główne okno zostało zamknięte zamiast tego je ukryj proces
     window.on("close", (e) => {
       e.preventDefault();
-      createTray();
       window.hide();
     });
   } catch (error) {}
