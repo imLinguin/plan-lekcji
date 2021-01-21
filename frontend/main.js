@@ -1,17 +1,56 @@
-const { BrowserWindow, app, ipcMain, session } = require("electron");
+const {
+  BrowserWindow,
+  app,
+  ipcMain,
+  Tray,
+  Menu,
+  Notification,
+} = require("electron");
 const fs = require("fs");
 const path = require("path");
 let window;
 let popup;
+let tray;
 function QuitApp() {
   if (process.platform !== "darwin") {
-    app.quit();
+    app.exit();
+    tray.destroy();
   }
 }
 function RefreshMain() {
   if (window) {
     window.reload();
   }
+}
+function createTray() {
+  tray = new Tray(path.join(__dirname, "content", "images", "logo.png"));
+  const contextMenu = Menu.buildFromTemplate([
+    {
+      label: "Open",
+      type: "normal",
+      click() {
+        window.minimize();
+        window.focus();
+        tray.destroy();
+        tray = null;
+      },
+    },
+    {
+      label: "Exit",
+      type: "normal",
+      click() {
+        QuitApp();
+      },
+    },
+  ]);
+  tray.setToolTip("Plan Lekcji");
+  tray.setContextMenu(contextMenu);
+  tray.on("double-click", () => {
+    window.minimize();
+    window.focus();
+    tray.destroy();
+    tray = null;
+  });
 }
 function createWindow() {
   window = new BrowserWindow({
@@ -47,7 +86,6 @@ function customizationPopup() {
       allowRunningInsecureContent: false,
     },
   });
-
   popup.loadFile(path.join(__dirname, "content", "popup", "popup.html"));
   popup.setMenuBarVisibility(false);
 }
@@ -61,16 +99,13 @@ app.whenReady().then(() => {
     if (!fs.existsSync("preferences.json")) {
       customizationPopup();
     }
-    //Jeśli główne okno zostało zamknięte zakończ proces
-    window.on("closed", () => {
-      QuitApp();
+    //Jeśli główne okno zostało zamknięte zamiast tego je ukryj proces
+    window.on("close", (e) => {
+      e.preventDefault();
+      createTray();
+      window.hide();
     });
   } catch (error) {}
-});
-
-//Zakończ proces jeśli wszystkie okna są zamknięte
-app.on("window-all-closed", () => {
-  QuitApp();
 });
 //Zapisz preferencje do pliku jeśli kliknięto przycisk zapisz w ustawieniach
 ipcMain.on("closensave-popup", (from, data) => {
@@ -79,6 +114,7 @@ ipcMain.on("closensave-popup", (from, data) => {
     JSON.stringify(data)
   );
   popup.close();
+  popup = null;
   RefreshMain();
 });
 

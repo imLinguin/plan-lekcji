@@ -25,7 +25,6 @@ function updateTimer(h, m) {
   lessonEndTime.setHours(h);
   lessonEndTime.setMinutes(m);
   lessonEndTime.setSeconds(0);
-  console.log(lessonEndTime);
 }
 function setup() {
   createCanvas(130, 130);
@@ -73,6 +72,7 @@ function draw() {
     }`;
     if (distance <= 0) {
       updateLesson();
+      document.querySelector(".countdown-lesson-break").innerHTML = "00:00";
     }
     //koniec dnia w szkole
     //allEnd
@@ -137,17 +137,17 @@ function updateLesson() {
     //Sprawdzanie czy nie jest zbyt późno
     if (!poLekcjach) {
       if (now >= poczatek && now < koniec) {
-        console.log("BRY");
         currentLesson.innerHTML = window.plan.array[i] || "Brak lekcji";
         countdownText.innerHTML = "Lekcja kończy się za:";
         fellfree.style.display = "none";
         updateTimer(do_godzina, do_minuta);
       } else if (now >= koniec && now <= nextPoczatek) {
-        console.log("AURA");
         currentLesson.innerHTML = "Przerwa";
         countdownText.innerHTML = "Przerwa kończy się za:";
         updateTimer(parseInt(od_godzina1), parseInt(od_minuta1));
         fellfree.style.display = "block";
+        if (window.nextLessonNotify(window.plan.array[i]))
+          window.nextLessonNotify(window.plan.array[i]);
       }
     } else {
       ipcRenderer.send("render-po-lekcjach");
