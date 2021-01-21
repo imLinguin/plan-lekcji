@@ -91,7 +91,7 @@ footer {
     width: 90px;
     height: 40px;
     position: absolute;
-    left: 20px;
+    left: 40px;
     bottom: -10px;
 }
 
@@ -104,7 +104,7 @@ footer {
     width: 90px;
     height: 40px;
     position: absolute;
-    right: 20px;
+    right: 40px;
     bottom: -10px;
 }
 
@@ -118,4 +118,48 @@ footer {
     font-size: 14px;
     color: #ffffff;
     font-weight: 500;
+}
+
+.religia-text {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#religia {
+    position: absolute;
+    left: 10px;
+    top: 66px;
+}
+
+.klasa-text {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#klasa {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+}
+
+.grupa-text {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#grupa {
+    position: absolute;
+    left: 10px;
+    top: 134px;
+}
+
+.motyw-text {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#motyw {
+    position: absolute;
+    left: 10px;
+    top: 168px;
 }

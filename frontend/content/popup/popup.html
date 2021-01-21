@@ -32,10 +32,31 @@
     </div>
   </section>
 
-  <article id="religia">
-  <label for="religia">Religia?</label>
-  <input type="checkbox" name="religia" class="religia">
-  </article>
+  <section id="preferences">
+    <article id="religia">
+      <label class="religia-text">Religia</label>
+      <input type="checkbox" name="religia" class="religia">
+    </article>
+
+    <article id="klasa">
+      <label class="klasa-text">Klasa</label>
+      <input type="text" name="klasa" class="klasa">
+    </article>
+
+    <article id="grupa">
+      <label class="grupa-text">Grupa</label>
+      <input type="text" name="grupa" class="grupa">
+    </article>
+
+    <article id="motyw">
+      <label class="motyw-text">Motyw</label>
+      <select name="motyw" class="motyw">
+        <option value="dark">Ciemny</option>
+        <option value="light">Jasny</option>
+        <option value="system" selected>Systemowy</option>
+      </select>
+    </article>
+  </section>
 
   <footer>
     <button class="save">
@@ -44,6 +65,7 @@
     <button class="restore">
       <h2 class="restore-text">Restore</h2>
     </button>
+    <img src="../images/thunder.png" alt="Błyskawica" width="30" height="30">
   </footer>
 
 </body>
