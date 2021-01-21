@@ -146,8 +146,8 @@ function updateLesson() {
         countdownText.innerHTML = "Przerwa kończy się za:";
         updateTimer(parseInt(od_godzina1), parseInt(od_minuta1));
         fellfree.style.display = "block";
-        if (window.nextLessonNotify(window.plan.array[i]))
-          window.nextLessonNotify(window.plan.array[i]);
+        if (window.nextLessonNotify(window.plan.array[i + 1]))
+          window.nextLessonNotify(window.plan.array[i + 1]);
       }
     } else {
       ipcRenderer.send("render-po-lekcjach");
