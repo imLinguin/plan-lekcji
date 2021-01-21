@@ -1,8 +1,9 @@
-const { BrowserWindow, app, ipcMain } = require("electron");
+const { BrowserWindow, app, ipcMain,nativeTheme } = require("electron");
 const fs = require("fs");
 const path = require("path");
 let window;
 let popup;
+let preferencje;
 function QuitApp() {
   if (process.platform !== "darwin") {
     app.quit();
@@ -15,7 +16,7 @@ function RefreshMain() {
 }
 function createWindow() {
   window = new BrowserWindow({
-    title: "Plan lekcji",
+    title: "Plan Lekcji",
     width: 500,
     height: 700,
     resizable: false,
@@ -50,10 +51,18 @@ function customizationPopup() {
   popup.loadFile(path.join(__dirname, "content", "popup", "popup.html"));
   popup.setMenuBarVisibility(false);
 }
-
+async function loadPrefs()
+{
+  if (fs.existsSync(path.join(__dirname, "preferences.json"))) {
+    preferencje = fs.readFileSync(path.join(__dirname, "preferences.json"));
+    preferencje = await JSON.parse(preferencje);
+  }
+  nativeTheme.themeSource = preferencje.motyw || "system";
+}
 app.setName("Plan Lekcji");
 app.setAppUserModelId("Plan Lekcji");
 app.whenReady().then(() => {
+  loadPrefs();
   createWindow();
   try {
     //Jeśli plik z preferencjami nie istnieje otwórz okno ustawień przy uruchomieni
@@ -72,6 +81,8 @@ ipcMain.on("closensave-popup", (from, data) => {
     path.join(__dirname, "preferences.json"),
     JSON.stringify(data)
   );
+  preferencje = data;
+  nativeTheme.themeSource = preferencje.motyw || "dark";
   popup.close();
   popup = null;
   RefreshMain();
@@ -82,11 +93,6 @@ ipcMain.on("open-preferences", (event, args) => {
 });
 
 ipcMain.on("get-preferences", async (event) => {
-  let preferencje;
-  if (fs.existsSync(path.join(__dirname, "preferences.json"))) {
-    preferencje = fs.readFileSync(path.join(__dirname, "preferences.json"));
-    preferencje = await JSON.parse(preferencje);
-  }
   event.returnValue = preferencje || null;
 });
 
