@@ -90,7 +90,7 @@ footer {
     width: 90px;
     height: 40px;
     position: absolute;
-    right: 40px;
+    right: 35px;
     bottom: -10px;
 }
 
@@ -103,23 +103,26 @@ footer {
     width: 90px;
     height: 40px;
     position: absolute;
-    left: 40px;
+    left: 35px;
     bottom: -10px;
 }
 
 .save-text {
     font-size: 14px;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 600;
     position: absolute;
-    top: -1px;
-    left: 20px;
+    top: -0.5px;
+    left: 23px;
 }
 
 .restore-text {
     font-size: 14px;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 600;
+    position: absolute;
+    top: -0.5px;
+    left: 15px;
 }
 
 .religia-text {
@@ -172,4 +175,5 @@ footer {
     left: -26px;
     width: 52px;
     height: 52px;
+    user-select: none;
 }
