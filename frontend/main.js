@@ -62,7 +62,7 @@ async function loadPrefs() {
     preferencje = fs.readFileSync(path.join(__dirname, "preferences.json"));
     preferencje = await JSON.parse(preferencje);
   }
-  nativeTheme.themeSource = preferencje.motyw || "system";
+  nativeTheme.themeSource = preferencje?.motyw || "system";
 }
 app.setName("Plan Lekcji");
 app.setAppUserModelId("Plan Lekcji");

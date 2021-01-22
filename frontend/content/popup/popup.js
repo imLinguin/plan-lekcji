@@ -1,7 +1,7 @@
 const { ipcRenderer } = require("electron");
 const saveButton = document.querySelector(".save");
 const restoreButton = document.querySelector(".restore");
-const religiaCheck = document.querySelector(".religia");
+const religiaCheck = document.querySelector("#_religia");
 const klasaBox = document.querySelector(".klasa");
 const grupyBox = document.querySelector(".grupa");
 const themeSelect = document.querySelector(".motyw")
