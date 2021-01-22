@@ -321,7 +321,7 @@ footer {
     font-weight: 500;
     font-size: 18px;
     position: absolute;
-    bottom: 40px;
+    bottom: -3px;
 }
 
 .klasa{ 
@@ -333,6 +333,9 @@ footer {
     -moz-appearance: none;
     font-family: inherit;
     font-size: inherit;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 600;
 }
   
 .klasa:focus::-webkit-input-placeholder{
@@ -366,26 +369,6 @@ footer {
     outline: none;
 }
   
-.klasa::-webkit-input-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease-out;
-}
-  
-.klasa::-moz-placeholder {
-    opacity: 0;
-    transition: opacity .2s ease-out;
-}
-  
-.klasa:focus::-webkit-input-placeholder {
-    opacity: 1;
-    transition-delay: .2s;
-}
-  
-.klasa:focus::-moz-placeholder {
-    opacity: 1;
-    transition-delay: .2s;
-}
-  
 .field__label-wrap {
     box-sizing: border-box;
     pointer-events: none;
@@ -412,20 +395,8 @@ footer {
     opacity: 1;
 }
   
-.field__label {
-    position: absolute;
-    left: var(--uiFieldPaddingLeft);
-    top: calc(50% - .5em);
-  
-    line-height: 1;
-    font-size: var(--fieldHintFontSize, inherit);
-  
-    transition: top .2s cubic-bezier(0.9, -0.15, 0.1, 1.15), opacity .2s ease-out, font-size .2s ease-out;
-    will-change: bottom, opacity, font-size;
-}
-  
-.klasa:focus ~ .field__label-wrap .field__label,
-.klasa:not(:placeholder-shown) ~ .field__label-wrap .field__label {
+.klasa:focus ~ .field__label-wrap,
+.klasa:not(:placeholder-shown) ~ .field__label-wrap {
     --fieldHintFontSize: var(--fieldHintFontSizeFocused, .75rem);
     top: var(--fieldHintTopHover, .25rem);
 }
@@ -470,13 +441,16 @@ footer {
 .page {
     box-sizing: border-box;
     width: 100%;
-    max-width: 480px;
+    max-width: 150px;
     margin: auto;
     padding: 1rem;
     display: grid;
     grid-gap: 30px;
+    text-align: left;
 }
 
 .klasa-textbox {
-    margin-top: -50px;
+    position: fixed;
+    left: 75px;
+    top: 120px;
 }
