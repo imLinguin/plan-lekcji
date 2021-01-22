@@ -170,7 +170,7 @@ footer {
 #motyw {
     position: absolute;
     left: 10px;
-    top: 250px;
+    top: 280px;
 }
 
 .thunder {
@@ -453,4 +453,143 @@ footer {
     position: fixed;
     left: 75px;
     top: 120px;
+}
+
+.h3-grupa {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    position: absolute;
+    bottom: -19px;
+}
+
+.grupa{ 
+    --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 600;
+}
+  
+.grupa:focus::-webkit-input-placeholder{
+    color: var(--uiFieldPlaceholderColor);
+}
+  
+.grupa:focus::-moz-placeholder{
+    color: var(--uiFieldPlaceholderColor);
+}
+  
+.field {
+    --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+    --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
+    --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);   
+    --uiFieldBorderColorActive: var(--fieldBorderColorActive, rgba(22, 22, 22, 1));
+  
+    display: var(--fieldDisplay, inline-flex);
+    position: relative;
+    font-size: var(--fieldFontSize, 1rem);
+}
+  
+.grupa {
+    box-sizing: border-box;
+    width: var(--fieldWidth, 100%);
+    height: var(--fieldHeight, 3rem);
+    padding: var(--fieldPaddingTop, 1.25rem) var(--uiFieldPaddingRight) var(--fieldPaddingBottom, .5rem) var(--uiFieldPaddingLeft);
+    border-bottom: var(--uiFieldBorderWidth) solid var(--fieldBorderColor, rgba(0, 0, 0, .25));  
+}
+  
+.grupa:focus {
+    outline: none;
+}
+  
+.field__label-wrap {
+    box-sizing: border-box;
+    pointer-events: none;
+    cursor: text;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+.field__label-wrap::after {
+    content: "";
+    box-sizing: border-box;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+  
+.grupa:focus ~ .field__label-wrap::after {
+    opacity: 1;
+}
+  
+.grupa:focus ~ .field__label-wrap,
+.grupa:not(:placeholder-shown) ~ .field__label-wrap {
+    --fieldHintFontSize: var(--fieldHintFontSizeFocused, .75rem);
+    top: var(--fieldHintTopHover, .25rem);
+}
+  
+.field .field__label-wrap::after {
+    border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
+    transition: opacity .2s ease-out;
+    will-change: opacity;
+}
+
+.field_v2 .field__label-wrap {
+  overflow: hidden;
+}
+
+.field_v2 .field__label-wrap::after {
+  border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
+  transform: translate3d(-105%, 0, 0);
+  will-change: transform, opacity;
+  transition: transform .285s ease-out .2s, opacity .2s ease-out .2s;
+}
+
+.field_v2 .grupa:focus ~ .field__label-wrap::after {
+  transform: translate3d(0, 0, 0);
+  transition-delay: 0;
+}
+
+.field_v3 .field__label-wrap::after {
+  border: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
+  will-change: opacity, height;
+  transition: height .2s ease-out, opacity .2s ease-out;
+}
+
+.field_v3 .grupa:focus ~ .field__label-wrap::after {
+  height: 100%;
+}
+  
+.field {
+    --fieldBorderColor: #ffffff;
+    --fieldBorderColorActive: #35bef9;
+}
+  
+.page-grupa {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 150px;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 30px;
+    text-align: left;
+}
+
+.grupa-textbox {
+    position: fixed;
+    left: 75px;
+    top: 170px;
 }
