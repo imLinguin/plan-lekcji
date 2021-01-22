@@ -32,6 +32,7 @@ function createWindow() {
       contextIsolation: false,
       devTools: true,
       allowRunningInsecureContent: false,
+      backgroundThrottling: false,
     },
   });
 
