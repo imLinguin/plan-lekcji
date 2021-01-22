@@ -25,16 +25,11 @@ setInterval(updateDate, 12 * 1000 * 360);
 //Otwieranie preferencji
 const { ipcRenderer } = require("electron");
 const prefButton = document.querySelector(".pref-button");
-const displayLekcje = document.querySelector(".lessons-plan");
+
 prefButton.addEventListener("click", () => {
   ipcRenderer.send("open-preferences", null);
 });
 
 document.querySelector(".refresh-button").addEventListener("click", () => {
   ipcRenderer.send("refresh-main");
-});
-
-ipcRenderer.on("plan-ready", () => {
-  if (window.plan) {
-  }
 });

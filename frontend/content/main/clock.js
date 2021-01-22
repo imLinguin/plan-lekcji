@@ -3,6 +3,7 @@ let now = new Date();
 let poLekcjach = false;
 const _minute = 1000 * 60;
 const _hour = _minute * 60;
+const displayLekcje = document.querySelector(".lessons-plan");
 const lekcje = {
   0: "7:10-7:55",
   1: "8:00-8:45",
@@ -148,6 +149,17 @@ function updateLesson() {
         if (window.plan.array[i] && now - poczatek < 5000 * 60) {
           window.nextLessonNotify(window.plan.array[i]);
         }
+        let out = "";
+        let count = 1;
+        for (lekcja in window.plan.array) {
+          if (window.plan.array[lekcja]) {
+            out += `${count}. ${window.plan.array[lekcja]} ${
+              i > count + 1 ? "✅" : ""
+            }${i === count + 1 ? "⏲" : ""}<br>`;
+            count++;
+          }
+        }
+        displayLekcje.innerHTML = out;
       } else if (now >= koniec && now <= nextPoczatek) {
         currentLesson.innerHTML = "Przerwa";
         countdownText.innerHTML = "Przerwa kończy się za:";
