@@ -42,7 +42,6 @@ function setup() {
 }
 
 function draw() {
-  console.log(lessonEndTime)
   clear();
   frameRate(1);
   background("rgba(1,1,1,0)");
@@ -72,13 +71,14 @@ function draw() {
     document.querySelector(".countdown-lesson-break").innerHTML = `${minutes}:${
       seconds < 10 ? "0" + seconds : seconds
     }`;
-    if (distance <= 0) {
+    if (distance < 0) {
       updateLesson();
       document.querySelector(".countdown-lesson-break").innerHTML = "00:00";
     }
   }
-      //koniec dnia w szkole
-    //allEnd
+  //koniec dnia w szkole
+  //allEnd
+  if (window.plan) {
     let temp = lekcje[window.plan.last].split("-")[1];
     let [koniec_h, koniec_m] = temp.split(":");
     let end = new Date();
@@ -93,12 +93,12 @@ function draw() {
       allEnd.innerHTML = `${hours}:${minutes < 10 ? "0" + minutes : minutes}:${
         seconds < 10 ? "0" + seconds : seconds
       }`;
-    } 
-    else {
+    } else {
       allEnd.innerHTML = "0:00:00";
       poLekcjach = true;
-      updateLesson()
+      updateLesson();
     }
+  }
   strokeWeight(2);
   beginShape(POINTS);
   for (let a = 0; a < 360; a += 90) {
@@ -139,17 +139,13 @@ function updateLesson() {
     nextPoczatek = nextPoczatek.getTime();
     //Sprawdzanie przedziału czy nie jest zbyt wcześnie
     //Sprawdzanie czy nie jest zbyt późno
-    console.log("Po lekcjach",poLekcjach)
     if (!poLekcjach) {
       if (now >= poczatek && now < koniec) {
         currentLesson.innerHTML = window.plan.array[i] || "Brak lekcji";
         countdownText.innerHTML = "Lekcja kończy się za:";
         fellfree.style.display = "none";
         updateTimer(do_godzina, do_minuta);
-        if (
-          window.plan.array[i] &&
-          (now - poczatek) < 5000 * 60
-        ) {
+        if (window.plan.array[i] && now - poczatek < 5000 * 60) {
           window.nextLessonNotify(window.plan.array[i]);
         }
       } else if (now >= koniec && now <= nextPoczatek) {
@@ -158,7 +154,7 @@ function updateLesson() {
         updateTimer(parseInt(od_godzina1), parseInt(od_minuta1));
         fellfree.style.display = "block";
       }
-   } else {
+    } else {
       ipcRenderer.send("render-po-lekcjach");
     }
   }

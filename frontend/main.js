@@ -1,4 +1,10 @@
-const { BrowserWindow, app, ipcMain,nativeTheme } = require("electron");
+const {
+  BrowserWindow,
+  app,
+  ipcMain,
+  nativeTheme,
+  dialog,
+} = require("electron");
 const fs = require("fs");
 const path = require("path");
 let window;
@@ -51,8 +57,7 @@ function customizationPopup() {
   popup.loadFile(path.join(__dirname, "content", "popup", "popup.html"));
   popup.setMenuBarVisibility(false);
 }
-async function loadPrefs()
-{
+async function loadPrefs() {
   if (fs.existsSync(path.join(__dirname, "preferences.json"))) {
     preferencje = fs.readFileSync(path.join(__dirname, "preferences.json"));
     preferencje = await JSON.parse(preferencje);
@@ -109,4 +114,16 @@ ipcMain.on("render-po-lekcjach", () => {
     window.loadFile(
       path.join(__dirname, "content", "po-lekcjach", "po-lekcjach.html")
     );
+});
+
+ipcMain.on("fetch-error", (event, data) => {
+  let ch = dialog.showMessageBoxSync({
+    type: "error",
+    title: "Mamy problem",
+    message: data,
+    buttons: ["Otwórz ustawienia", "Ogarnę to"],
+  });
+  if (ch == 0) {
+    customizationPopup();
+  }
 });
