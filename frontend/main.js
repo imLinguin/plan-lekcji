@@ -35,8 +35,11 @@ function createWindow() {
       backgroundThrottling: false,
     },
   });
-
-  window.loadFile(path.join(__dirname, "content", "main", "index.html"));
+  let day = new Date().getDay();
+  if(day >= 6)
+    window.loadFile(path.join(__dirname, "content", "po-lekcjach", "po-lekcjach.html"))
+  else
+    window.loadFile(path.join(__dirname, "content", "main", "index.html"));
   window.setMenuBarVisibility(false);
   window.show();
 }
@@ -65,6 +68,8 @@ async function loadPrefs() {
   }
   nativeTheme.themeSource = preferencje?.motyw || "system";
 }
+
+app.commandLine.appendSwitch('disable-renderer-backgrounding')
 app.setName("Plan Lekcji");
 app.setAppUserModelId("Plan Lekcji");
 app.whenReady().then(() => {

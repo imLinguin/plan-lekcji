@@ -21,7 +21,6 @@ saveButton.addEventListener("click", () => {
   {
     klasaBox.value = klasaBox.value.toLowerCase().trim();
     klasaBox.value = klasy[klasaBox.value];
-    console.log(klasy)
     grupyBox.value = grupyBox.value.trim();
   ipcRenderer.send("closensave-popup", {
     religia: religiaCheck.checked,

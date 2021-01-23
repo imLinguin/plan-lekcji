@@ -3,7 +3,6 @@ async function fetchData({ religia, grupa, klasa }) {
     `http://localhost:8080/plan/${klasa}?group=${grupa}&rel=${religia}`
   )
     .then((response) => {
-      console.log(response.status !== 200);
       if (response.status !== 200) {
         throw Error(response.statusText);
       }
