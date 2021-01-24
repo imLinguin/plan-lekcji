@@ -21,15 +21,12 @@ function updateDate() {
 }
 
 setInterval(updateDate, 12 * 1000 * 360);
-
-//Otwieranie preferencji
-const { ipcRenderer } = require("electron");
 const prefButton = document.querySelector(".pref-button");
 
 prefButton.addEventListener("click", () => {
   ipcRenderer.send("open-preferences", null);
 });
 
-document.querySelector(".refresh-button").addEventListener("click", () => {
+document.querySelector(".refresh-button")?.addEventListener("click", () => {
   ipcRenderer.send("refresh-main");
 });

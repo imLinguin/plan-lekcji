@@ -1,3 +1,4 @@
+const { ipcRenderer } = require("electron");
 async function fetchData({ religia, grupa, klasa }) {
   window.plan = await fetch(
     `http://localhost:8080/plan/${klasa}?group=${grupa}&rel=${religia}`

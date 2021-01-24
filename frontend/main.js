@@ -12,7 +12,7 @@ let popup;
 let preferencje;
 function QuitApp() {
   //darwin - MacOS
-  //Na macu zwykle nie zamykamy procesu 
+  //Na macu zwykle nie zamykamy procesu
   //a pozostawiamy programy aktywne do momentu zamknięcia przez użytkownika Cmd+Q
   //Trzeba przetestować jak to wygląda w naszym przypadku
   if (process.platform !== "darwin") {
@@ -37,15 +37,15 @@ function createWindow() {
       devTools: true,
       allowRunningInsecureContent: false,
       backgroundThrottling: false,
+      preload: path.join(__dirname, "content", "main-preload.js"),
     },
   });
   let day = new Date().getDay();
   //Sprawdzenie czy jest weekend i wyświetlenie odpowiedniego html
-  if(day === 6 || 1)
-    window.loadFile(path.join(__dirname, "content", "po-lekcjach", "po-lekcjach.html"))
-  else
+  if (day === 6 || 1)
+    window.loadFile(path.join(__dirname, "content", "wolne", "wolne.html"));
   //W przeciwnym wypadku uruchomić głównt html
-    window.loadFile(path.join(__dirname, "content", "main", "index.html"));
+  else window.loadFile(path.join(__dirname, "content", "main", "index.html"));
   window.setMenuBarVisibility(false);
   window.show();
 }
@@ -75,7 +75,7 @@ async function loadPrefs() {
   nativeTheme.themeSource = preferencje?.motyw || "system";
 }
 //Ustawienia wstępne
-app.commandLine.appendSwitch('disable-renderer-backgrounding')
+app.commandLine.appendSwitch("disable-renderer-backgrounding");
 app.setName("Plan Lekcji");
 //Wymagana linia na windowsie do powiadomien
 app.setAppUserModelId("Plan Lekcji");

@@ -1,3 +1,4 @@
+const { ipcRenderer } = require("electron");
 let lessonEndTime;
 let now = new Date();
 let poLekcjach = false;
