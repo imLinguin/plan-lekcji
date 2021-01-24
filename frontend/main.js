@@ -11,6 +11,10 @@ let window;
 let popup;
 let preferencje;
 function QuitApp() {
+  //darwin - MacOS
+  //Na macu zwykle nie zamykamy procesu 
+  //a pozostawiamy programy aktywne do momentu zamknięcia przez użytkownika Cmd+Q
+  //Trzeba przetestować jak to wygląda w naszym przypadku
   if (process.platform !== "darwin") {
     app.quit();
   }
@@ -36,9 +40,11 @@ function createWindow() {
     },
   });
   let day = new Date().getDay();
-  if(day >= 6)
+  //Sprawdzenie czy jest weekend i wyświetlenie odpowiedniego html
+  if(day === 6 || 1)
     window.loadFile(path.join(__dirname, "content", "po-lekcjach", "po-lekcjach.html"))
   else
+  //W przeciwnym wypadku uruchomić głównt html
     window.loadFile(path.join(__dirname, "content", "main", "index.html"));
   window.setMenuBarVisibility(false);
   window.show();
@@ -68,12 +74,16 @@ async function loadPrefs() {
   }
   nativeTheme.themeSource = preferencje?.motyw || "system";
 }
-
+//Ustawienia wstępne
 app.commandLine.appendSwitch('disable-renderer-backgrounding')
 app.setName("Plan Lekcji");
+//Wymagana linia na windowsie do powiadomien
 app.setAppUserModelId("Plan Lekcji");
+//Gdy program w pełni uruchomiony wykonaj kod
 app.whenReady().then(() => {
+  //Ładowanie pliku z preferencjami
   loadPrefs();
+  //Otworzenie głównego okna
   createWindow();
   try {
     //Jeśli plik z preferencjami nie istnieje otwórz okno ustawień przy uruchomieni
@@ -98,30 +108,30 @@ ipcMain.on("closensave-popup", (from, data) => {
   popup = null;
   RefreshMain();
 });
-
+//Otwarcie preferencji
 ipcMain.on("open-preferences", (event, args) => {
   customizationPopup();
 });
-
+//Zwrócenie wartości preferencji do procesu render
 ipcMain.on("get-preferences", async (event) => {
   event.returnValue = preferencje || null;
 });
-
+//Wywołanie eventu gdy plan zostanie pobrany z serwera
 ipcMain.on("plan-fetched", (event) => {
   event.reply("plan-ready");
 });
-
+//Odświerzanie głównego okna na polecenie z procesu render
 ipcMain.on("refresh-main", () => {
   RefreshMain();
 });
-
+//Wczytanie pliku jeśli lekcje się skończyły
 ipcMain.on("render-po-lekcjach", () => {
   if (window)
     window.loadFile(
       path.join(__dirname, "content", "po-lekcjach", "po-lekcjach.html")
     );
 });
-
+//Wyświetlenie okna dialogowego jeśli wystąpi błąd.
 ipcMain.on("fetch-error", (event, data) => {
   let ch = dialog.showMessageBoxSync({
     type: "error",

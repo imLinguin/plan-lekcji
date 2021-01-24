@@ -41,7 +41,7 @@ function setup() {
     minute() < 10 ? "0" + minute() : minute()
   }`;
 }
-
+//w naszym przypdaku funkcja ta wykonuje się co sekundę, ustawienie frameRate() - biblioteka p5.js
 function draw() {
   clear();
   frameRate(1);
@@ -119,12 +119,16 @@ function updateLesson() {
   const countdownText = document.querySelector(".countdown-text");
   const fellfree = document.querySelector(".feel-free");
   for (let i = 0; i < window.plan.array.length; i++) {
+    //Rozdzielenie godzin na tablicę 2 elementową
+    //temp - obecnie sprawdzana lekcja
+    //temp1 - kolejna lekcja względem obecnie sprawdzanej
     let temp = lekcje[i].split("-");
     let temp1 = lekcje[i + 1].split("-");
     let [od_godzina1, od_minuta1] = temp1[0].split(":");
     let [od_godzina, od_minuta] = temp[0].split(":");
     let [do_godzina, do_minuta] = temp[1].split(":");
-
+    //Fancy ustawienie godzin na konkretną datę i konwersja do milisekund
+    //Znacznie łatwiejsze obliczenia
     now = new Date();
     let nextPoczatek = new Date();
     let poczatek = new Date();
@@ -138,8 +142,7 @@ function updateLesson() {
     poczatek = poczatek.getTime();
     koniec = koniec.getTime();
     nextPoczatek = nextPoczatek.getTime();
-    //Sprawdzanie przedziału czy nie jest zbyt wcześnie
-    //Sprawdzanie czy nie jest zbyt późno
+    //Sprawdzanie przedziału czy godzina mieści się w danym przedziale
     if (!poLekcjach) {
       if (now >= poczatek && now < koniec) {
         currentLesson.innerHTML = window.plan.array[i] || "Brak lekcji";
