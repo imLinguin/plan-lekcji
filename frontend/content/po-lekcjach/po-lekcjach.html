@@ -2,13 +2,84 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Po Lekcjach</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Paweł Lidwin, Aleksander Baran" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Lekcji</title>
+  
+    <!-- All Styles -->
+    <link rel="stylesheet" href="po-lekcjach.css" />
+  
+    <!-- All Scripts -->
+    <script src="po-lekcjach.js" defer></script>
+    <script src="../main/clock.js" defer></script>
+    <script src="../main/script.js" defer></script>
+    
 </head>
 
 <body>
-    <div>TEST</div>
+    <header>
+        <div id="logo">
+            <h1>Plan Lekcji</h1>
+            <img id="home-logo" src="../images/logo.png" width="60" height="60" alt="Logo" />
+        </div>
+        <div class="feel-free">FEEL FREE</div>
+    </header>
+
+    <section id="border">
+        <div class="border">
+          <div class="border-1"></div>
+          <div class="border-2"></div>
+          <div class="border-3"></div>
+        </div>
+    </section>
+
+    <section id="end-of-lesson">
+        <div class="end-text">
+            <h2 class="h2-koniec-lekcji">Wszystkie lekcje skończone!</h2>
+            <h2 class="h2-co-robisz">Więc co tu robisz?</h2>
+        </div>
+    </section>
+
+    <section id="date">
+        <div class="date"></div>
+        <div class="day-of-week"></div>
+    </section>
+
+    <section id="tomorrow-lessons-plan">
+        <h3>Plan lekcji na jutro:</h3>
+        <div class="border-plan">
+            <div class="border-plan-1"></div>
+            <div class="border-plan-2"></div>
+            <div class="border-plan-3"></div>
+            <div class="border-plan-4"></div>
+        </div>
+        <div class="lessons-plan"></div>
+    </section>
+
+    <section id="customization">
+        <button title="Ustawienia" class="pref-button">
+            <img class="customization-logo" src="../images/customization-logo.png" alt="Customization Logo" />
+        </button>
+    </section>
+
+    <section id="social-medias"></section>
+
+    <footer>
+        <h5 class="footer-text">
+            Developed by <b>Paweł Lidwin</b> & <b>Olek Baran</b>
+        </h5>
+        <h6>
+            plan-lekcji-zse.pl
+        </h6>
+        <div class="border-footer">
+            <div class="border-footer-1"></div>
+            <div class="border-footer-2"></div>
+            <div class="border-footer-3"></div>
+            <div class="border-footer-4"></div>
+            <div class="border-footer-5"></div>
+        </div>
+    </footer>
 </body>
 
 </html>
