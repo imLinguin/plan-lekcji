@@ -375,10 +375,21 @@ h6 {
   margin-top: 9px;
 }
 
-.lessons-plan
-{
+.lessons-plan {
   position:absolute;
   text-align: left;
-  top:200px;
-  left: 10px;
+  top: 195px;
+  left: 14px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.lekcja-skonczona {
+  font-weight: 400;
+}
+
+.lekcja-w-trakcie {
+  color: #35bef9;
+  font-weight: 700;
+  font-size: 19px;
 }

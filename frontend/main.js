@@ -34,8 +34,8 @@ function createWindow() {
     icon: "content/images/logo.png",
     webPreferences: {
       nodeIntegration: true,
-      contextIsolation: false,
       devTools: true,
+      contextIsolation: false,
       allowRunningInsecureContent: false,
       backgroundThrottling: false,
       preload: path.join(__dirname, "content", "main-preload.js"),

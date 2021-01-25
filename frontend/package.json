@@ -25,6 +25,12 @@
     },
     "nsis": {
       "deleteAppDataOnUninstall": true
+    },
+    "linux":{
+      "target":[
+        "deb"
+      ]
+      
     }
   }
 }

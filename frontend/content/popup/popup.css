@@ -38,7 +38,7 @@ header {
 h1 {
     margin-top: 10px;
     font-size: 20px;
-    color:  #d3293c;
+    color:  #35bef9;
 }
 
 .border-popup {
@@ -114,6 +114,7 @@ footer {
     position: absolute;
     top: -0.5px;
     left: 23px;
+    user-select: none;
 }
 
 .restore-text {
@@ -123,6 +124,7 @@ footer {
     position: absolute;
     top: -0.5px;
     left: 15px;
+    user-select: none;
 }
 
 .religia-text {
@@ -592,6 +594,7 @@ footer {
     position: fixed;
     left: 75px;
     top: 170px;
+    z-index: 10;
 }
 
 /* MOTYWs */
