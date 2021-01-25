@@ -1,4 +1,5 @@
 //ustawienie dzisiejszej daty
+const {ipcRenderer} = require("electron");
 updateDate();
 function updateDate() {
   let n = new Date();

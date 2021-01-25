@@ -22,6 +22,11 @@ router.get("/:klasa", async (req, res) => {
   } else {
     const { birthtime } = fs.statSync(`./dane/${req.params.klasa}.txt`);
     const plan = await parser(req.params.klasa, day, group, rel);
+
+    let nextDay = day + 1 <= 5 ? day+1 : null ;
+
+    const tommorowPlan = await parser(req.params.klasa, nextDay, group, rel);
+
     let last = 0;
     for (let i = 0; i < plan.length; i++) {
       if (plan[i + 1] === "" && plan[i]) {
@@ -34,6 +39,7 @@ router.get("/:klasa", async (req, res) => {
     res.status(200);
     res.json({
       array: plan,
+      tomorrow: tommorowPlan,
       updatedAt: birthtime,
       last: last,
     });

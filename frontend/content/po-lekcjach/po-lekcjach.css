@@ -268,3 +268,13 @@ h6 {
     color: #35bef9;
     font-weight: 500;
   }
+
+.lessons-plan {
+    position:absolute;
+    text-align: left;
+    top: 195px;
+    left: 14px;
+    font-weight: 600;
+    font-size: 17px;
+}
+  
