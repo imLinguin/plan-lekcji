@@ -42,7 +42,7 @@ function createWindow() {
   });
   let day = new Date().getDay();
   //Sprawdzenie czy jest weekend i wyświetlenie odpowiedniego html
-  if (day === 6 || 1)
+  if (day === 6 || 0)
     window.loadFile(path.join(__dirname, "content", "wolne", "wolne.html"));
   //W przeciwnym wypadku uruchomić głównt html
   else window.loadFile(path.join(__dirname, "content", "main", "index.html"));
