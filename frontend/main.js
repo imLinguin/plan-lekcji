@@ -30,7 +30,7 @@ function createWindow() {
     width: 500,
     height: 700,
     resizable: false,
-    minimizable: false,
+    minimizable: true,
     icon: "content/images/logo.png",
     webPreferences: {
       nodeIntegration: true,
@@ -73,7 +73,7 @@ async function loadPrefs() {
     preferencje = fs.readFileSync(path.join(__dirname, "preferences.json"));
     preferencje = await JSON.parse(preferencje);
   }
-  nativeTheme.themeSource = (preferencje?.motyw === true ? "light":"dark");
+  nativeTheme.themeSource = preferencje?.motyw === true ? "light" : "dark";
 }
 //Ustawienia wstępne
 app.commandLine.appendSwitch("disable-renderer-backgrounding");
@@ -104,7 +104,7 @@ ipcMain.on("closensave-popup", (from, data) => {
     JSON.stringify(data)
   );
   preferencje = data;
-  nativeTheme.themeSource = (preferencje?.motyw === true ? "light": "dark"  );
+  nativeTheme.themeSource = preferencje?.motyw === true ? "light" : "dark";
   popup.close();
   popup = null;
   RefreshMain();
