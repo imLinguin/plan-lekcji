@@ -56,7 +56,7 @@ function customizationPopup() {
     width: 400,
     height: 430,
     resizable: false,
-    frame: false,
+    frame: true,
     icon: "content/images/customization-icon.png",
     webPreferences: {
       nodeIntegration: true,

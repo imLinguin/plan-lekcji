@@ -38,7 +38,7 @@ header {
 h1 {
     margin-top: 10px;
     font-size: 20px;
-    color: #35bef9;
+    color:  #d3293c;
 }
 
 .border-popup {
@@ -611,12 +611,12 @@ footer {
 	        align-items: center;
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
-	        flex: 1;
+            flex: 1;
 }
 
 .toggle_switch{
-  width: 100px;
-  height: 45px;
+  width: 85px;
+  height: 38.25px;
   position: relative;
 }
 
@@ -673,7 +673,7 @@ svg.checkbox{
 
 svg.checkbox .is_checked{
   opacity: 0;
-  fill: yellow;
+  fill:  #fce413;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transform: translateX(200%) rotate(45deg);
@@ -696,28 +696,28 @@ svg.checkbox .is_unchecked{
 @-webkit-keyframes animateRing{
   to{
     stroke-dashoffset: 0;
-    stroke: #b0aa28;
+    stroke: #ffffff;
   }
 }
 
 @keyframes animateRing{
   to{
     stroke-dashoffset: 0;
-    stroke: #b0aa28;
+    stroke:  #ffffff;
   }
 }
 
 @-webkit-keyframes resetRing{
   to{
     stroke-dashoffset: 0;
-    stroke: #233043;
+    stroke: #35bef9;
   }
 }
 
 @keyframes resetRing{
   to{
     stroke-dashoffset: 0;
-    stroke: #233043;
+    stroke: #35bef9;
   }
 }
 
@@ -726,9 +726,11 @@ svg.checkbox .is_unchecked{
     font-weight: 500;
     font-size: 18px;
     position: absolute;
-    bottom: 170px;
+    bottom: -32px;
 }
 
 .motyw-checkbox {
-    
+    position: absolute;
+    bottom: -103.5px;
+    left: 15px;
 }
