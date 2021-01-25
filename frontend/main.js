@@ -30,6 +30,7 @@ function createWindow() {
     width: 500,
     height: 700,
     resizable: false,
+    minimizable: false,
     icon: "content/images/logo.png",
     webPreferences: {
       nodeIntegration: true,
@@ -55,7 +56,7 @@ function customizationPopup() {
     width: 400,
     height: 430,
     resizable: false,
-    frame: true,
+    frame: false,
     icon: "content/images/customization-icon.png",
     webPreferences: {
       nodeIntegration: true,

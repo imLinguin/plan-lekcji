@@ -28,7 +28,14 @@ async function pobierzKlasy() {
 pobierzKlasy().then(() => {
   if (cache) SetPreferences(cache);
   saveButton.addEventListener("click", () => {
-    if (klasaBox.value && grupyBox.value) {
+    klasaBox.value = klasaBox.value.trim();
+    grupyBox.value = grupyBox.value.trim();
+    if (
+      klasaBox.value &&
+      grupyBox.value &&
+      klasaBox.value.match(/[1-4](\w)/gm) &&
+      !grupyBox.value.match(/\s/)
+    ) {
       klasaBox.value = klasaBox.value.toLowerCase().trim();
       klasaBox.value = klasy[klasaBox.value];
       grupyBox.value = grupyBox.value.trim();
