@@ -102,7 +102,7 @@ h1 {
 .day-of-week {
     color: #d3293c;
     position: absolute;
-    right: 56px;
+    left: 363px;
     top: 110px;
     font-size: 15px;
     font-weight: 600;
@@ -124,21 +124,21 @@ h1 {
 .end-text {
     position: absolute;
     left: 22px;
-    top: 60px;
+    top: 55px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 19px;
     color: #d3293c;
     font-weight: bold;
     position: absolute;
     left: 3px;
-    top: 120px;
+    top: 115px;
 }
 
 .border-plan {
     position: absolute;
-    top: 105px;
+    top: 95px;
 }
   
 .border-plan-1 {
@@ -203,7 +203,7 @@ h3 {
     font-size: 13.5px;
     color: #d3293c;
     font-weight: 400;
-    margin-top: 544px;
+    margin-top: 581px;
     user-select: none;
 }
   
@@ -257,3 +257,14 @@ h3 {
     background: #D3293C;
     border-radius: 10px;
 }
+
+h6 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 7px;
+    left: 194.5px;
+    font-size: 13.5px;
+    color: #35bef9;
+    font-weight: 500;
+  }
