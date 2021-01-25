@@ -32,11 +32,12 @@ pobierzKlasy().then(() => {
       klasaBox.value = klasaBox.value.toLowerCase().trim();
       klasaBox.value = klasy[klasaBox.value];
       grupyBox.value = grupyBox.value.trim();
+      
       ipcRenderer.send("closensave-popup", {
         religia: religiaCheck.checked,
         klasa: klasaBox.value,
         grupa: grupyBox.value,
-        motyw: themeSelect.value,
+        motyw: themeSelect.checked,
       });
     }
   });
@@ -49,6 +50,6 @@ pobierzKlasy().then(() => {
     religiaCheck.checked = data.religia || "";
     klasaBox.value = data.klasa || "";
     grupyBox.value = data.grupa || "";
-    themeSelect.value = data.motyw || "";
+    themeSelect.checked = data.motyw|| false;
   }
 });

@@ -72,7 +72,7 @@ async function loadPrefs() {
     preferencje = fs.readFileSync(path.join(__dirname, "preferences.json"));
     preferencje = await JSON.parse(preferencje);
   }
-  nativeTheme.themeSource = preferencje?.motyw || "system";
+  nativeTheme.themeSource = (preferencje?.motyw === true ? "light":"dark");
 }
 //Ustawienia wstępne
 app.commandLine.appendSwitch("disable-renderer-backgrounding");
@@ -103,7 +103,7 @@ ipcMain.on("closensave-popup", (from, data) => {
     JSON.stringify(data)
   );
   preferencje = data;
-  nativeTheme.themeSource = preferencje.motyw || "dark";
+  nativeTheme.themeSource = (preferencje?.motyw === true ? "light": "dark"  );
   popup.close();
   popup = null;
   RefreshMain();
