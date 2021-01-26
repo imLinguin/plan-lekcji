@@ -16,7 +16,7 @@ module.exports = async () => {
 
     for (let j = 0; j < content.length; j++) {
       if (!content[j].match("BHP"))
-        content[j] = content[j].replace(/([A-Z](Ś|[a-z]|[A-Z]))|(#\w{3})/g, "");
+        content[j] = content[j].replace(/([A-Z](Ś|[a-z]|[A-Z]))\b|(#\w{3})/g, "");
 
       content[j] = content[j].replace(/r_/gm, "");
       content[j].trim();
