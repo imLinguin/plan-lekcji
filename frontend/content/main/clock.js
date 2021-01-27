@@ -153,32 +153,42 @@ function updateLesson() {
           window.nextLessonNotify(window.plan.array[i]);
         }
         let out = "";
-  let count = 1;
-    for (lekcja in window.plan.array) {
-      if (window.plan.array[lekcja]) {
-        out += i > count + 1 ? (`<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} ✅</div>`) : (i === count + 1 ?`<br> <div class="lekcja-w-trakcie">${count}. ${window.plan.array[lekcja]} ⏲</div><br>` : `${count}. ${window.plan.array[lekcja]} <br>`)
-          count++;
-       }
-      }
+        let count = 1;
+        for (lekcja in window.plan.array) {
+          if (window.plan.array[lekcja]) {
+            console.log(window.plan.array[lekcja], i === count, i, count);
+            out +=
+              i > count
+                ? `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} ✅</div>`
+                : i === count
+                ? `<br> <div class="lekcja-w-trakcie">${count}. ${window.plan.array[lekcja]} ⏲</div><br>`
+                : `${count}. ${window.plan.array[lekcja]} <br>`;
+            count++;
+          }
+        }
 
-    displayLekcje.innerHTML = out;
+        displayLekcje.innerHTML = out;
       } else if (now >= koniec && now <= nextPoczatek) {
         currentLesson.innerHTML = "Przerwa";
         countdownText.innerHTML = "Przerwa kończy się za:";
         updateTimer(parseInt(od_godzina1), parseInt(od_minuta1));
         fellfree.style.display = "block";
         let out = "";
-  let count = 1;
-    for (lekcja in window.plan.array) {
-      if (window.plan.array[lekcja]) {
-        out += i > count + 1 ? (`<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} ✅</div>`) : (i === count + 1 ?`<br> <div class="lekcja-w-trakcie">${count}. ${window.plan.array[lekcja]} ⏲</div><br>` : `${count}. ${window.plan.array[lekcja]} <br>`)
-          count++;
-       }
-      }
+        let count = 1;
+        for (lekcja in window.plan.array) {
+          if (window.plan.array[lekcja]) {
+            out +=
+              i > count + 1
+                ? `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} ✅</div>`
+                : i === count + 1
+                ? `<br> <div class="lekcja-w-trakcie">${count}. ${window.plan.array[lekcja]} ⏲</div><br>`
+                : `${count}. ${window.plan.array[lekcja]} <br>`;
+            count++;
+          }
+        }
 
-    displayLekcje.innerHTML = out;
+        displayLekcje.innerHTML = out;
       }
-      
     } else {
       ipcRenderer.send("render-po-lekcjach");
     }
