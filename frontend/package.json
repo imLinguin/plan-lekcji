@@ -7,9 +7,10 @@
   "scripts": {
     "dev": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dist": "electron-builder --x64 --ia32"
+    "dist": "electron-builder -wl"
   },
   "author": "Linguin & Olek Baran",
+  "homepage":"https://github.com/imLinguin/plan-lekcji",
   "license": "Apache-2.0 License",
   "devDependencies": {
     "electron": "^11.1.1",
@@ -29,8 +30,8 @@
     "linux":{
       "target":[
         "deb"
-      ]
-      
+      ],
+      "maintainer":"Linguin & Olek Baran"
     }
   }
 }

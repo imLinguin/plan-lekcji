@@ -156,7 +156,6 @@ function updateLesson() {
         let count = 1;
         for (lekcja in window.plan.array) {
           if (window.plan.array[lekcja]) {
-            console.log(window.plan.array[lekcja], i === count, i, count);
             out +=
               i > count
                 ? `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} ✅</div>`
@@ -178,7 +177,7 @@ function updateLesson() {
         for (lekcja in window.plan.array) {
           if (window.plan.array[lekcja]) {
             out +=
-              i > count
+              i >= count
                 ? `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} ✅</div>`
                 : `${count}. ${window.plan.array[lekcja]} <br>`;
             count++;
