@@ -178,10 +178,8 @@ function updateLesson() {
         for (lekcja in window.plan.array) {
           if (window.plan.array[lekcja]) {
             out +=
-              i > count + 1
+              i > count
                 ? `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} ✅</div>`
-                : i === count + 1
-                ? `<br> <div class="lekcja-w-trakcie">${count}. ${window.plan.array[lekcja]} ⏲</div><br>`
                 : `${count}. ${window.plan.array[lekcja]} <br>`;
             count++;
           }
