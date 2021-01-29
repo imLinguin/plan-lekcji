@@ -155,11 +155,11 @@ function updateLesson() {
         let out = "";
         let count = 1;
         for (lekcja in window.plan.array) {
-          if (window.plan.array[lekcja]) {
-            out +=
-              i > count
+          console.log(i,count,i>count,i===count)
+          if (window.plan.array[lekcja]) {            out +=
+              i > lekcja
                 ? `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} ✅</div>`
-                : i === count
+                : i === lekcja
                 ? `<br> <div class="lekcja-w-trakcie">${count}. ${window.plan.array[lekcja]} ⏲</div><br>`
                 : `${count}. ${window.plan.array[lekcja]} <br>`;
             count++;
@@ -177,7 +177,7 @@ function updateLesson() {
         for (lekcja in window.plan.array) {
           if (window.plan.array[lekcja]) {
             out +=
-              i >= count
+              i >= lekcja
                 ? `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} ✅</div>`
                 : `${count}. ${window.plan.array[lekcja]} <br>`;
             count++;

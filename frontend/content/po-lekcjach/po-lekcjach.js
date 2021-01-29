@@ -1,23 +1,19 @@
-sumCheck();
-function sumCheck()
-{
-if(window.plan){
-  listLessons();  
+let intv = setInterval(() => {
+  if (window.plan)
+    listLessons();
+}, 5000);
 }
-else{
-  setTimeout(sumCheck(),2000);
-}
-}
-function listLessons()
-{
+
+function listLessons() {
   const displayLekcje = document.querySelector(".lessons-plan");
   let count = 1;
   let out = "";
   for (lekcja in window.plan.tomorrow) {
     if (window.plan.tomorrow[lekcja]) {
       out += `${count}. ${window.plan.tomorrow[lekcja]}` + "<br>"
-        count++;
-     }
-}
+      count++;
+    }
+  }
+  clearInterval(intv);
   displayLekcje.innerHTML = out;
 }
