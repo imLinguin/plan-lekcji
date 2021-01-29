@@ -1,8 +1,7 @@
 let intv = setInterval(() => {
   if (window.plan)
     listLessons();
-}, 5000);
-}
+}, 1000);
 
 function listLessons() {
   const displayLekcje = document.querySelector(".lessons-plan");

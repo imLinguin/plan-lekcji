@@ -22,8 +22,8 @@ router.get("/:klasa", async (req, res) => {
   } else {
     const { birthtime } = fs.statSync(`./dane/${req.params.klasa}.txt`);
     const plan = await parser(req.params.klasa, day, group, rel);
-
-    let nextDay = day + 1 <= 5 ? day+1 : null ;
+    console.log(day);
+    let nextDay = day + 1 <= 5 ? day+1 : 1 ;
 
     const tommorowPlan = await parser(req.params.klasa, nextDay, group, rel);
 
