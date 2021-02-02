@@ -1,4 +1,6 @@
-const { ipcRenderer } = require("electron");
+const {
+  ipcRenderer
+} = require("electron");
 const fs = require("fs");
 const path = require("path");
 const saveButton = document.querySelector(".save");
@@ -9,7 +11,7 @@ const grupyBox = document.querySelector(".grupa");
 const themeSelect = document.querySelector(".motyw");
 const klasypath = path.join(__dirname, "klasy.json");
 let klasy;
-let cache = ipcRenderer.sendSync("get-preferences", null);
+let cache = ipcRenderer.sendSync("get-preferences");
 async function pobierzKlasy() {
   const d = await fetch("http://localhost:8080/klasy")
     .then(async (d) => await d.json())
@@ -39,7 +41,7 @@ pobierzKlasy().then(() => {
       klasaBox.value = klasaBox.value.toLowerCase().trim();
       klasaBox.value = klasy[klasaBox.value];
       grupyBox.value = grupyBox.value.trim();
-      
+
       ipcRenderer.send("closensave-popup", {
         religia: religiaCheck.checked,
         klasa: klasaBox.value,
@@ -52,11 +54,12 @@ pobierzKlasy().then(() => {
   restoreButton.addEventListener("click", () => {
     SetPreferences(cache);
   });
+
   function SetPreferences(data) {
-    data.klasa = Object.keys(klasy)[parseInt(data.klasa) - 1];
+    let tempk = Object.keys(klasy)[parseInt(data.klasa) - 1];
     religiaCheck.checked = data.religia || "";
-    klasaBox.value = data.klasa || "";
+    klasaBox.value = tempk || "";
     grupyBox.value = data.grupa || "";
-    themeSelect.checked = data.motyw|| false;
+    themeSelect.checked = data.motyw || false;
   }
 });
