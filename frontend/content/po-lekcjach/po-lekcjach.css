@@ -88,6 +88,7 @@ h1 {
     font-size: 17px;
     color: #35bef9;
     font-weight: bold;
+    user-select: none;
 }
 
 .date {
@@ -102,7 +103,7 @@ h1 {
 .day-of-week {
     color: #d3293c;
     position: absolute;
-    left: 363px;
+    left: 382px;
     top: 110px;
     font-size: 15px;
     font-weight: 600;
@@ -273,8 +274,8 @@ h6 {
     position:absolute;
     text-align: left;
     top: 195px;
-    left: 14px;
+    left: 20px;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 19px;
 }
   
