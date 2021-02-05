@@ -20,13 +20,31 @@ const lekcje = {
   12: "17:35-18:20",
   13: "18:25-19:10",
 };
+const shortlekcje = {
+  0: "7:10-7:40",
+  1: "7:45-8:15",
+  2: "8:20-8:50",
+  3: "8:55-9:25",
+  4: "9:45-10:15",
+  5: "10:20-10:50",
+  6: "10:55-11:25",
+  7: "11:30-12:00",
+  8: "12:05-12:35",
+  9: "12:40-13:10",
+  10: "13:15-13:45",
+  11: "14:00-14:30",
+  12: "14:35-15:05",
+  13: "15:10-15:40",
+}
 const allEnd = document.querySelector(".countdown-end");
+
 function updateTimer(h, m) {
   lessonEndTime = new Date();
   lessonEndTime.setHours(h);
   lessonEndTime.setMinutes(m);
   lessonEndTime.setSeconds(0);
 }
+
 function setup() {
   createCanvas(130, 130);
   let radius = min(width, height) / 2;
@@ -80,7 +98,7 @@ function draw() {
   //koniec dnia w szkole
   //allEnd
   if (window.plan) {
-    let temp = lekcje[window.plan.last].split("-")[1];
+    let temp = window.plan.short ? shortlekcje[window.plan.last].split("-")[1] : lekcje[window.plan.last].split("-")[1];
     let [koniec_h, koniec_m] = temp.split(":");
     let end = new Date();
     end.setHours(koniec_h);
@@ -122,8 +140,8 @@ function updateLesson() {
     //Rozdzielenie godzin na tablicę 2 elementową
     //temp - obecnie sprawdzana lekcja
     //temp1 - kolejna lekcja względem obecnie sprawdzanej
-    let temp = lekcje[i].split("-");
-    let temp1 = lekcje[i + 1].split("-");
+    let temp = window.plan.short ? shortlekcje[i].split("-") : lekcje[i].split("-");
+    let temp1 = window.plan.short ? shortlekcje[i + 1].split("-") : lekcje[i + 1].split("-");
     let [od_godzina1, od_minuta1] = temp1[0].split(":");
     let [od_godzina, od_minuta] = temp[0].split(":");
     let [do_godzina, do_minuta] = temp[1].split(":");
@@ -155,12 +173,13 @@ function updateLesson() {
         let out = "";
         let count = 1;
         for (lekcja in window.plan.array) {
-          if (window.plan.array[lekcja]) {            out +=
-              i > parseInt(lekcja)
-                ? `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} <div class="border-done-1"></div><div class="border-done-2"></div></div>`
-                : i === parseInt(lekcja)
-                ? `${parseInt(count)>1?"<br>":""} <div class="lekcja-w-trakcie">${count}. ${window.plan.array[lekcja]} ⏲</div><br>`
-                : `${count}. ${window.plan.array[lekcja]} <br>`;
+          if (window.plan.array[lekcja]) {
+            out +=
+              i > parseInt(lekcja) ?
+              `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} <div class="border-done-1"></div><div class="border-done-2"></div></div>` :
+              i === parseInt(lekcja) ?
+              `${parseInt(count)>1?"<br>":""} <div class="lekcja-w-trakcie">${count}. ${window.plan.array[lekcja]} ⏲</div><br>` :
+              `${count}. ${window.plan.array[lekcja]} <br>`;
             count++;
           }
         }
@@ -176,9 +195,9 @@ function updateLesson() {
         for (lekcja in window.plan.array) {
           if (window.plan.array[lekcja]) {
             out +=
-              i >= parseInt(lekcja)
-                ? `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} <div class="border-done-1"></div><div class="border-done-2"></div>`
-                : `${count}. ${window.plan.array[lekcja]} <br>`;
+              i >= parseInt(lekcja) ?
+              `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} <div class="border-done-1"></div><div class="border-done-2"></div>` :
+              `${count}. ${window.plan.array[lekcja]} <br>`;
             count++;
           }
         }
