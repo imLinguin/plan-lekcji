@@ -353,6 +353,7 @@ h6 {
   font-size: 17px;
   color: #35bef9;
   font-weight: bold;
+  user-select: none;
 }
 
 .refresh-button {
@@ -392,4 +393,19 @@ h6 {
   color: #35bef9;
   font-weight: 700;
   font-size: 19px;
+}
+
+.border-done-1 {
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  width: 30px;
+  height: 4.4px;
+  background: #35bef9;
+  transform: rotate(30deg);
+  border-radius: 10px;
+}
+
+.border-done2 {
+
 }
