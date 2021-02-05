@@ -196,7 +196,7 @@ function updateLesson() {
           if (window.plan.array[lekcja]) {
             out +=
               i >= parseInt(lekcja) ?
-              `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} <div class="border-done-1"></div><div class="border-done-2"></div>` :
+              `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} <div class="border-done-1"></div><div class="border-done-2"></div></div>` :
               `${count}. ${window.plan.array[lekcja]} <br>`;
             count++;
           }
