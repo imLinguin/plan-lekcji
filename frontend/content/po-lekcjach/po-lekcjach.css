@@ -103,7 +103,7 @@ h1 {
 .day-of-week {
     color: #d3293c;
     position: absolute;
-    left: 382px;
+    left: 366px;
     top: 110px;
     font-size: 15px;
     font-weight: 600;
@@ -195,9 +195,53 @@ h3 {
     user-select: none;
 }
 
+.website-button {
+    position: absolute;
+    bottom: 170px;
+    right: 22px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #d3293c;
+    user-select: none;
+}
+
+.github-button {
+    position: absolute;
+    bottom: 275px;
+    right: 22px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #d3293c;
+    user-select: none;
+}
+
 .customization-logo {
     width: 45px;
     height: 45px;
+}
+
+.github-logo {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    right: 6.5px;
+    top: 6px;
+}
+
+.website-logo {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 6.3px;
+    right: 6.5px;
 }
 
 .footer-text {
