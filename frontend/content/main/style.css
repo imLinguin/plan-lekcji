@@ -129,7 +129,7 @@ canvas {
   font-weight: bold;
   position: absolute;
   top: 128px;
-  left: 3.5px;
+  left: 3.8px;
 }
 
 .pref-button {
@@ -387,6 +387,7 @@ h6 {
 
 .lekcja-skonczona {
   font-weight: 400;
+  display: flex;
 }
 
 .lekcja-w-trakcie {
@@ -396,16 +397,21 @@ h6 {
 }
 
 .border-done-1 {
-  position: absolute;
-  top: 100px;
-  left: 120px;
-  width: 30px;
-  height: 4.4px;
+  width: 20px;
+  height: 3.5px;
   background: #35bef9;
-  transform: rotate(30deg);
+  transform: rotate(35deg);
   border-radius: 10px;
+  margin-left: 80px;
+  margin-top: 15px;
 }
 
-.border-done2 {
-
+.border-done-2 {
+  width: 25px;
+  height: 3.5px;
+  background: #35bef9;
+  transform: rotate(115deg);
+  border-radius: 10px;
+  margin-left: -11px;
+  margin-top: 10px;
 }
