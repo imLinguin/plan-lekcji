@@ -43,7 +43,7 @@ router.get("/:klasa", async (req, res) => {
       updatedAt: birthtime,
       last: last,
       //Zmienić na false jeśli są normalne lekcje. True gdy lekcje skrócone
-      short:false,
+      short:process.env.SHORT === "true",
     });
   }
 });

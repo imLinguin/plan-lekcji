@@ -21,3 +21,9 @@ Express api for school project
   - rel,czy ktoś uczęszcza na lekcje religii - **true/false**,
 - **PUT** /updateall?
   - key, hasło do aktualizacji podawane w pliku .env
+
+### PLIK ENV:
+Plik ENV zawiera dane takie jak:
+
+- PASSWD - haslo do aktualizacji danych
+- SHORT - bool czy lekcje skrócone
