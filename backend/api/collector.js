@@ -7,7 +7,7 @@ module.exports = async () => {
   let content = [];
   for (let i = 1; i <= 31; i++) {
     await page.goto(
-      `http://www.elektronik.rzeszow.pl/plan-lekcji-2/plany/o${i}.html`
+      `http://www.elektronik.rzeszow.pl/plan-lekcji/plany/o${i}.html`
     );
 
     const $ = cheerio.load(await page.content());
