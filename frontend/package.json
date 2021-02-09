@@ -34,7 +34,5 @@
       "maintainer": "Linguin & Olek Baran"
     }
   },
-  "dependencies": {
-    "custom-electron-titlebar": "^3.2.6"
-  }
+  "dependencies": {}
 }

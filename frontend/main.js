@@ -30,7 +30,6 @@ function createWindow() {
     width: 500,
     height: 700,
     resizable: false,
-    titleBarStyle: "hidden",
     minimizable: true,
     icon: "content/images/logo.png",
     webPreferences: {
