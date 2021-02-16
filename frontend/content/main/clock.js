@@ -176,9 +176,9 @@ function updateLesson() {
           if (window.plan.array[lekcja]) {
             out +=
               i > parseInt(lekcja) ?
-              `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} <div class="border-done-1"></div><div class="border-done-2"></div></div>` :
+              `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} ✅ </div>` :
               i === parseInt(lekcja) ?
-              `${parseInt(count)>1?"<br>":""} <div class="lekcja-w-trakcie">${count}. ${window.plan.array[lekcja]} ⏲</div><br>` :
+              `${parseInt(count)>1?"<br>":""} <div class="lekcja-w-trakcie">${count}. ${window.plan.array[lekcja]} 🔊</div><br>` :
               `${count}. ${window.plan.array[lekcja]} <br>`;
             count++;
           }
@@ -196,7 +196,7 @@ function updateLesson() {
           if (window.plan.array[lekcja]) {
             out +=
               i >= parseInt(lekcja) ?
-              `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} <div class="border-done-1"></div><div class="border-done-2"></div></div>` :
+              `<div class="lekcja-skonczona">${count}. ${window.plan.array[lekcja]} ✅</div> <br>` :
               `${count}. ${window.plan.array[lekcja]} <br>`;
             count++;
           }

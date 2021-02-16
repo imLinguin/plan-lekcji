@@ -395,23 +395,3 @@ h6 {
   font-weight: 700;
   font-size: 19px;
 }
-
-.border-done-1 {
-  width: 15px;
-  height: 3.5px;
-  background: #35bef9;
-  transform: rotate(35deg);
-  border-radius: 10px;
-  margin-left: 80px;
-  margin-top: 15px;
-}
-
-.border-done-2 {
-  width: 25px;
-  height: 3.5px;
-  background: #35bef9;
-  transform: rotate(120deg);
-  border-radius: 10px;
-  margin-left: -9px;
-  margin-top: 9px;
-}
