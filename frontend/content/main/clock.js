@@ -58,6 +58,8 @@ function setup() {
   document.querySelector(".clock").innerHTML = `${hour()}:${
     minute() < 10 ? "0" + minute() : minute()
   }`;
+ if(window.plan)
+    updateLesson();
 }
 //w naszym przypdaku funkcja ta wykonuje się co sekundę, ustawienie frameRate() - biblioteka p5.js
 function draw() {
