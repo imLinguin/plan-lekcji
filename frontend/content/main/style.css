@@ -120,7 +120,7 @@ canvas {
   font-weight: bold;
   position: absolute;
   left: 4px;
-  top: 98px;
+  top: 102px;
 }
 
 .current-lesson {
@@ -128,7 +128,7 @@ canvas {
   color: #35bef9;
   font-weight: bold;
   position: absolute;
-  top: 128px;
+  top: 135px;
   left: 3.8px;
 }
 

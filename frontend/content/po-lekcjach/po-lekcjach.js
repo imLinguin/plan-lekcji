@@ -16,3 +16,12 @@ function listLessons() {
   clearInterval(intv);
   displayLekcje.innerHTML = out;
 }
+
+document.querySelector('.website-button').addEventListener('click', () => {
+  require("electron").shell.openExternal("https://www.plan-lekcji-zse.pl")
+})
+
+document.querySelector('.github-button').addEventListener('click', () => {
+  require("electron").shell.openExternal("https://github.com/imLinguin/plan-lekcji")
+})
+

@@ -43,6 +43,7 @@ h1 {
 
 .border-popup {
     position: absolute;
+    top: 65px;
 }
 
 .border-popup-1 {
