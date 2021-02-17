@@ -279,7 +279,9 @@ h4 {
   font-size: 13.5px;
   color: #d3293c;
   font-weight: 400;
-  margin-top: 544px;
+  position: absolute;
+  bottom: -16px;
+  left: 120.5px;
   user-select: none;
 }
 
@@ -307,7 +309,7 @@ h4 {
   position: absolute;
   bottom: 29px;
   left: 114px;
-  width: 266px;
+  width: 54.12%;
   height: 4.4px;
   background: #D3293C;
   border-radius: 10px;
