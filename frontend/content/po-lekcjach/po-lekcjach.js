@@ -45,10 +45,10 @@ function listLessons() {
     if (window.plan.tomorrow[lekcja]) {
       if(window.plan.short)
       {
-        out += `${count}. ${window.plan.tomorrow[lekcja]} <a style="opacity:0.3">${shortlekcje[lekcja]}</a>` + "<br>"
+        out += `${count}. ${window.plan.tomorrow[lekcja]} <a style="opacity:0.3">${shortlekcje[lekcja]}</a>` + "<br>" + "<br>"
       }
       else{
-        out += `${count}. ${window.plan.tomorrow[lekcja]} <a style="opacity:0.3">${lekcje[lekcja]}</a>` + "<br>"
+        out += `${count}. ${window.plan.tomorrow[lekcja]} <a style="opacity:0.3">${lekcje[lekcja]}</a>` + "<br>" + "<br>"
       }
       count++;
     }

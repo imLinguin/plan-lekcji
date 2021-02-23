@@ -185,7 +185,7 @@ h3 {
 .buttons {
     position: absolute;
     top: 585px;
-    right: 10px;
+    right: 5px;
 }
 
 .pref-button {
@@ -329,4 +329,23 @@ h6 {
     font-weight: 600;
     font-size: 17px;
 }
-  
+
+.border-buttons-1 {
+    position: absolute;
+    top: 210px;
+    right: 17px;
+    width: 85px;
+    height: 4.4px;
+    background: #D3293C;
+    border-radius: 10px;
+}
+
+.border-buttons-2 {
+    position: absolute;
+    top: 552px;
+    right: 17px;
+    width: 85px;
+    height: 4.4px;
+    background: #D3293C;
+    border-radius: 10px;
+}
