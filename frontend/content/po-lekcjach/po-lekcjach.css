@@ -104,6 +104,7 @@ h1 {
     color: #d3293c;
     position: absolute;
     left: 366px;
+    right: 50px;
     top: 110px;
     font-size: 15px;
     font-weight: 600;
@@ -133,7 +134,7 @@ h3 {
     color: #d3293c;
     font-weight: bold;
     position: absolute;
-    left: 3px;
+    left: 4px;
     top: 115px;
 }
 
@@ -179,6 +180,12 @@ h3 {
     height: 4.4px;
     background: #D3293C;
     border-radius: 10px;
+}
+
+.buttons {
+    position: absolute;
+    top: 585px;
+    right: 10px;
 }
 
 .pref-button {
@@ -233,7 +240,7 @@ h3 {
     height: 52px;
     position: absolute;
     right: 6.5px;
-    top: 6px;
+    top: 5.6px;
 }
 
 .website-logo {
@@ -241,7 +248,7 @@ h3 {
     height: 52px;
     position: absolute;
     top: 6.3px;
-    right: 6.5px;
+    right: 6.6px;
 }
 
 .footer-text {
@@ -317,9 +324,9 @@ h6 {
 .lessons-plan {
     position:absolute;
     text-align: left;
-    top: 195px;
+    top: 192px;
     left: 20px;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 17px;
 }
   
