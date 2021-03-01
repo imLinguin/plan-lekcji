@@ -5,10 +5,21 @@ const fs = require("fs");
 const router = new Router();
 
 router.get("/:klasa", async (req, res) => {
-  let day = req.query.day ? Number(req.query.day) : getDay(); //jednoliniowy if 😯
-  let group = req.query.group ? String(req.query.group) : "0";
+  let day;
+  if(req.query.day) 
+    day = Number(req.query.day); 
+  else 
+    getDay();
+  let group;
+  if(req.query.group) group = String(req.query.group);
+  else
+   group="0";
   group = group.split(",");
-  let rel = req.query.rel ? req.query.rel === "true" : true;
+  let rel; 
+  if(req.query.rel)
+   rel = req.query.rel === "true";
+  else
+    rel = true;
 
   if (
     !req.params.klasa ||
@@ -23,7 +34,11 @@ router.get("/:klasa", async (req, res) => {
     const { birthtime } = fs.statSync(`./dane/${req.params.klasa}.txt`);
     const plan = await parser(req.params.klasa, day, group, rel);
 
-    let nextDay = day + 1 <= 5 ? day+1 : 1 ;
+    let nextDay;
+    if(day + 1 <= 5) 
+      nextDay = day+1;
+    else 
+      nextDay = 1 ;
 
     const tommorowPlan = await parser(req.params.klasa, nextDay, group, rel);
 
