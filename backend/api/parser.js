@@ -4,15 +4,7 @@ module.exports = async (id, day, group, rel) => {
   const file = await fs.readFile(`./dane/${id}.txt`, "utf-8");
   let text = file;
   text = text.split("\n");
-  let lines;
-  if(days[day])
-  {
-    lines = days[day]?.split(",");
-  }
-  else
-  {
-    lines = null;
-  }
+  const lines = days[day]?.split(",");
   let arr = [];
   if (!lines) return [];
 
