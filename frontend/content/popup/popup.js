@@ -1,7 +1,6 @@
 const {
-  ipcRenderer
+  ipcRenderer,
 } = require("electron");
-const fs = require("fs");
 const path = require("path");
 const saveButton = document.querySelector(".save");
 const restoreButton = document.querySelector(".restore");
@@ -9,22 +8,12 @@ const religiaCheck = document.querySelector("#_religia");
 const klasaBox = document.querySelector(".klasa");
 const grupyBox = document.querySelector(".grupa");
 const themeSelect = document.querySelector(".motyw");
-const klasypath = path.join(__dirname, "klasy.json");
 let klasy;
 let cache = ipcRenderer.sendSync("get-preferences");
 async function pobierzKlasy() {
   const d = await fetch("http://localhost:8080/klasy")
-    .then(async (d) => await d.json())
-    .catch(() => {
-      let klasypath = path.join(__dirname, "klasy.json");
-      if (fs.existsSync(klasypath)) {
-        let data = fs.readFileSync(klasypath);
-        return JSON.parse(data);
-      }
-    });
+    .then(async (d) => await d.json());
   klasy = d;
-  //backup klas w szkole na wypadek braku internetu w przyszłości i chęci zmiany ustawień
-  fs.writeFileSync(klasypath, JSON.stringify(klasy));
 }
 
 pobierzKlasy().then(() => {

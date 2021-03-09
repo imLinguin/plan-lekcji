@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dist": "electron-builder -wl"
+    "dist": "electron-builder"
   },
   "author": "Linguin & Olek Baran",
   "homepage": "https://github.com/imLinguin/plan-lekcji",

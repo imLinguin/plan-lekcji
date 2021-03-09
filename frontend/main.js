@@ -70,8 +70,8 @@ function customizationPopup() {
   popup.setMenuBarVisibility(false);
 }
 async function loadPrefs() {
-  if (fs.existsSync(path.join(__dirname, "preferences.json"))) {
-    preferencje = fs.readFileSync(path.join(__dirname, "preferences.json"));
+  if (fs.existsSync(path.join(app.getPath('userData'), "preferences.json"))) {
+    preferencje = fs.readFileSync(path.join(app.getPath('userData'), "preferences.json"));
     preferencje = await JSON.parse(preferencje);
   }
   nativeTheme.themeSource = preferencje?.motyw === true ? "light" : "dark";
@@ -89,7 +89,7 @@ app.whenReady().then(() => {
   createWindow();
   try {
     //Jeśli plik z preferencjami nie istnieje otwórz okno ustawień przy uruchomieni
-    if (!fs.existsSync("preferences.json")) {
+    if (!fs.existsSync(path.join(app.getPath('userData'),"preferences.json"))) {
       customizationPopup();
     }
     //Jeśli główne okno zostało zamknięte zamiast tego je ukryj proces
@@ -101,7 +101,7 @@ app.whenReady().then(() => {
 //Zapisz preferencje do pliku jeśli kliknięto przycisk zapisz w ustawieniach
 ipcMain.on("closensave-popup", (from, data) => {
   fs.writeFileSync(
-    path.join(__dirname, "preferences.json"),
+    path.join(app.getPath('userData'), "preferences.json"),
     JSON.stringify(data)
   );
   preferencje = data;
