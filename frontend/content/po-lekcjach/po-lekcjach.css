@@ -190,7 +190,7 @@ h3 {
 
 .pref-button {
     position: absolute;
-    bottom: 65px;
+    bottom: 120px;
     right: 22px;
     width: 65px;
     height: 65px;
@@ -218,7 +218,7 @@ h3 {
 
 .github-button {
     position: absolute;
-    bottom: 275px;
+    bottom: 240px;
     right: 22px;
     width: 65px;
     height: 65px;
@@ -241,14 +241,6 @@ h3 {
     position: absolute;
     right: 6.5px;
     top: 5.6px;
-}
-
-.website-logo {
-    width: 52px;
-    height: 52px;
-    position: absolute;
-    top: 6.3px;
-    right: 6.6px;
 }
 
 .footer-text {
@@ -332,7 +324,7 @@ h6 {
 
 .border-buttons-1 {
     position: absolute;
-    top: 210px;
+    top: 230px;
     right: 17px;
     width: 85px;
     height: 4.4px;
@@ -342,7 +334,7 @@ h6 {
 
 .border-buttons-2 {
     position: absolute;
-    top: 552px;
+    bottom: 155px;
     right: 17px;
     width: 85px;
     height: 4.4px;

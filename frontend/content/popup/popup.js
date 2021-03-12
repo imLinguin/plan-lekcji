@@ -1,7 +1,6 @@
 const {
   ipcRenderer,
 } = require("electron");
-const path = require("path");
 const saveButton = document.querySelector(".save");
 const restoreButton = document.querySelector(".restore");
 const religiaCheck = document.querySelector("#_religia");

@@ -335,18 +335,6 @@ h4 {
   background: #D3293C;
   border-radius: 10px;
 }
-
-h6 {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  bottom: 7px;
-  left: 194.5px;
-  font-size: 13.5px;
-  color: #35bef9;
-  font-weight: 500;
-}
-
 .feel-free {
   position: absolute;
   right: 41.5px;
