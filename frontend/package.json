@@ -2,7 +2,7 @@
   "name": "ft-plan-lekcji",
   "productName": "Plan Lekcji Elektronik",
   "version": "1.0.0",
-  "description": "Frontend na projekt na wystawę prac ucznów.",
+  "description": "Klient planu lekcji dla ZSE w Rzeszowie",
   "main": "main.js",
   "scripts": {
     "dev": "electron .",
@@ -29,9 +29,15 @@
     },
     "linux": {
       "target": [
-        "deb"
+        "AppImage"
       ],
-      "maintainer": "Linguin & Olek Baran"
+      "maintainer": "Linguin & Olek Baran",
+      "icon": "content/images/logo.png"
+    },
+    "appImage": {
+      "synopsis": "Klient planu lekcji dla ZSE w Rzeszowie",
+      "category": "Utility",
+      "artifactName": "${productName}-appimg-${version}.${ext}"
     }
   },
   "dependencies": {}
