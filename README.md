@@ -67,6 +67,7 @@ Plik `preferences.json` który odpowiada za zapisanie informacji o ustawieniach 
  
 ## Znane problemy
   System Windows wyświetla okno (widoczne na zdjęciu niżej) przy próbie uruchomienia instalatora. Jest to spowodowane brakiem certyfikatu. Spokojnie to nie wirus 😊. Aby ominąć problem należy kliknąć `Więcej informacji` a następnie `Uruchom mimo to`.
+  
  ![Błąd Orwella](https://user-images.githubusercontent.com/62100117/111198030-6da96d80-85bf-11eb-9a42-9eb084797fb7.png)
  
 ## Autorzy
