@@ -46,5 +46,6 @@ Plik `preferences.json` który odpowiada za zapisanie informacji o ustawieniach 
  
 ## Autorzy
 
-- Aleksander Baran ( front-end )
-- Paweł Lidwin ( back-end )
+- Aleksander Baran (front-end)
+- Paweł Lidwin (back-end)
+- Marek Bartoń (server administrator)
