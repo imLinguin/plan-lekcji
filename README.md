@@ -32,7 +32,7 @@ Plik `preferences.json` który odpowiada za zapisanie informacji o ustawieniach 
  Gdy program uruchomiony jest poraz pierwszy, użytkownika przywita okno ustawień gdzie należy wypełnić poniższe pola:
  - Religia - zaznaczone jeśli uczeń uczęszcza na religię.
  - Klasa - pełna nazwa klasy np. 1g, 2cs, 3h, 4b
- - Grupa - grupa do której chodzimy w formacie **grupa/liczba_grup**, jeśli na planie lekcji na stronie szkoły występuje kila przedziałów grup np: 
+ - Grupa - grupa do której należymy w formacie **grupa/liczba_grup**, jeśli na planie lekcji na stronie szkoły występuje kila przedziałów grup np: 
   
   ![obraz](https://user-images.githubusercontent.com/62100117/111636987-4938d580-87f9-11eb-9326-74bfdb2a571f.png)
 
