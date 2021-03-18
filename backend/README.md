@@ -17,7 +17,7 @@ Poniższa krótka dokumentacja opisuje sposób pobierania danych z serwera do tw
 - **GET** /plany/**_id_**?
   - day, dzień tygodnia - od 1 do 5 (opcjonalne, domyślnie-dzisiejszy dzień)
   - group, grupa/grupy w klasie po przecinku - np **2/2,2/4** (opcjonalne, domyślnie-zwraca lekcje dla wszystkich grup)
-  - rel,czy ktoś uczęszcza na lekcje religii - **true/false**, (opcjonalne, domyślnie-true)
+  - rel, czy ktoś uczęszcza na lekcje religii - **true/false**, (opcjonalne, domyślnie-true)
 - **GET** /klasy
 - **PUT** /updateall?
   - key, hasło do aktualizacji podawane w pliku .env
@@ -26,5 +26,5 @@ Poniższa krótka dokumentacja opisuje sposób pobierania danych z serwera do tw
 Plik ENV zawiera dane takie jak:
 
 - PORT - port sieciowy na którym serwer będzie aktywny
-- PASSWD - haslo do aktualizacji danych
-- SHORT - bool czy lekcje skrócone
+- PASSWD - hasło do aktualizacji danych
+- SHORT - boolean czy lekcje są skrócone
