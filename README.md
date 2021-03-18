@@ -1,10 +1,35 @@
+<p align="center"><img src="/frontend/content/images/logo.png" data-canonical-src="/frontend/content/images/logo.png" width="90" height="90" /></p>
+
 # plan-lekcji
 
 Szkolny projekt na wystawę prac uczniów.
 
 ## Opis
 
-.... Do zrobienia ....
+Plan Lekcji jest aplikacją, która:
+ - pokazuje plan lekcji dla zdefiniowanej grupy oraz klasy
+ - wysyła powiadomienie o rozpoczęciu się danej lekcji
+ - odlicza czas, który pozostał do zakończenia pojedynczej lekcji, jak i ich wszystkich
+ - pokazuje plan lekcji na kolejny dzień (po zakończeniu wszystkich w danym dniu)
+ - wyświetla aktualnie trwającą lekcję 🔊
+ - za pomocą ✅ oznacza zakończone lekcje
+
+Plan jest w pełni kompatybilny i synchronizowany z lekcjami skróconymi.
+
+Aplikacja stworzona jest przy wykorzystaniu [ElectronJS](https://www.electronjs.org/).
+
+Jest to framework, który pozwala użytkownikowi tworzyć aplikacje desktopowe przy użyciu HTML, CSS i JavaScriptu. 
+Technologia stanowi połączenie dwóch niezwykle popularnych bibliotek: Node. js i Chromium.
+
+Przy jego wykorzystaniu zostały stworzone aplikacje takie jak:
+ - [Visual Studio Code](https://code.visualstudio.com/)
+ - [Discord](https://discord.com/)
+ - [Twitch](https://www.twitch.tv/)
+ - [Microsoft Teams](https://teams.microsoft.com)
+ - [balenaEtcher](https://www.balena.io/etcher/)
+ - [Skype](https://www.skype.com/pl/)
+
+Plan jest pobierany ze szkolnej strony internetowej. Szczegóły znajdują się [Tutaj](https://github.com/imLinguin/plan-lekcji/tree/main/backend).
 
 ## Instalacja
 
