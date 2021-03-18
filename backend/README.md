@@ -1,4 +1,6 @@
-# plan-lekcji
+<p align="center"><img src="/frontend/content/images/logo.png" data-canonical-src="/frontend/content/images/logo.png" width="90" height="90" /></p>
+
+# plan-lekcji-backend
 Poniższa krótka dokumentacja opisuje sposób pobierania danych z serwera do tworzenia własnych projektów opartych na zbudowanym przez nas API.
 
 ### Zależności:
