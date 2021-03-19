@@ -3,6 +3,12 @@
 # plan-lekcji-backend
 Poniższa krótka dokumentacja opisuje sposób pobierania danych z serwera do tworzenia własnych projektów opartych na zbudowanym przez nas API.
 
+### Opis
+
+W tym folderze znajduje się kod źródłowy serwera który umożliwia pobieranie i aktualizowanie danych planu lekcji ze szkolnej strony. Jeśli chcesz uruchomić własny serwer postępuj zgodnie z [Instrukcjami](#konfiguracja-własnego-serwera).
+
+TBD..
+
 ### Zależności:
 - [cheerio](https://www.npmjs.com/package/cheerio)
 - [dotenv](https://www.npmjs.com/package/dotenv)
@@ -30,3 +36,14 @@ Plik ENV zawiera dane takie jak:
 - PORT - port sieciowy na którym serwer będzie aktywny
 - PASSWD - hasło do aktualizacji danych
 - SHORT - boolean czy lekcje są skrócone
+
+### Konfiguracja własnego serwera
+
+Wymagania wstępne: `Node.js` wersja 14 lub wyższa
+
+1. Sklonuj repozytorium `git clone https://github.com/imLinguin/plan-lekcji.git`
+2. Przejdź do folderu serwera `cd plan-lekcji/backend`
+3. Pobierz zależności `npm install`
+4. Utwórz plik `.env` i uzupełnij wartości według [Wzoru](#plik-env)
+5. Uruchom serwer `npm start`
+6. Wykonaj zapytanie o pobranie danych `curl -X PUT ADRES_SERWERA:PORT/updateall?key=PASSWD`, po ukończeniu procesu w konsoli serwera powinien ukazać się napis `YOINKED`
