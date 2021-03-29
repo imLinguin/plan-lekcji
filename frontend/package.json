@@ -29,7 +29,7 @@
     },
     "linux": {
       "target": [
-        "AppImage"
+        "deb"
       ],
       "maintainer": "Linguin & Olek Baran",
       "icon": "content/images/logo.png"
@@ -37,8 +37,12 @@
     "appImage": {
       "synopsis": "Klient planu lekcji dla ZSE w Rzeszowie",
       "category": "Utility",
-      "artifactName": "${productName}-appimg-${version}.${ext}"
+      "artifactName": "${productName}-appimage-${version}.${ext}"
+    },
+    "deb": {
+      "synopsis": "Klient planu lekcji dla ZSE w Rzeszowie",
+      "category": "Utility",
+      "artifactName": "${productName}-deb-${version}.${ext}"
     }
-  },
-  "dependencies": {}
+  }
 }
