@@ -43,9 +43,16 @@ Poniższe kroki przedstawają krok po kroku proces instalacji:
 Plik `preferences.json` który odpowiada za zapisanie informacji o ustawieniach znajduje się w odpowiednim folderze w `C:\Users\NAZWA_UŻYTKOWNIKA\AppData\Roaming\Plan Lekcji Elektronik`.
   
 ### Linux
+
+- Debian i dystrybucje na nim oparte
+  1. Pobierz plik z rozszerzeniem `.deb` z najnowszego [Wydania](https://github.com/imLinguin/plan-lekcji/releases/latest).
+  2. Zainstaluj pakiet korzystając z polecenia `sudo dpkg -i ./nazwapliku.deb`
+  3. Gotowe
+
+- Pozostałe dystrybucje
   1. Pobierz plik z rozszerzeniem `.AppImage` z najnowszego [Wydania](https://github.com/imLinguin/plan-lekcji/releases/latest).
-  2. Przenieś plik do preferowanej lokalizacji.
-  3. Uruchom plik.
+  2. Przenieś plik do wybranej lokalizacji.
+  3. Otwórz plik
 
 **WAŻNE** póki co nie jest tworzony plik .dekstop przez co aplikacja nie ukazuje się w menu aplikacji. Zalecane jest umieszczenie pliku w miejscu gdzie będzie łatwo dostępny.
 
