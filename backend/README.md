@@ -7,7 +7,7 @@ Poniższa krótka dokumentacja opisuje sposób pobierania danych z serwera do tw
 
 W tym folderze znajduje się kod źródłowy serwera który umożliwia pobieranie i aktualizowanie danych planu lekcji ze szkolnej strony. Jeśli chcesz uruchomić własny serwer postępuj zgodnie z [Instrukcjami](#konfiguracja-własnego-serwera).
 
-TBD..
+Serwer działa na zasadzie tak zwanego "scrappera" - uruchamiając przeglądarkę internetową bez interfejsu graficznego pobiera kod HTML ze strony szkoły. Po odpowiednim przetworzeniu dane zapisywane są do plików tekstowych skąd są gotowe na przesyłanie użytkownikom. W kategorii [podstrony](#podstrony-serwera) znajduje się dokładny opis jakie zapytania można wykonać do serwera.
 
 ### Zależności:
 - [cheerio](https://www.npmjs.com/package/cheerio)
