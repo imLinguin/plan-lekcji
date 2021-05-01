@@ -104,11 +104,17 @@ ipcMain.on("closensave-popup", (from, data) => {
     path.join(app.getPath('userData'), "preferences.json"),
     JSON.stringify(data)
   );
-  preferencje = data;
-  nativeTheme.themeSource = preferencje?.motyw === true ? "light" : "dark";
   popup.close();
   popup = null;
-  RefreshMain();
+  if(process.platform !== "darwin") {
+    nativeTheme.themeSource = preferencje?.motyw === true ? "light" : "dark";
+  }
+  else if (data?.motyw !== preferencje?.motyw) {
+    app.relaunch()
+    app.quit()
+  }
+  preferencje = data;
+
 });
 //Otwarcie preferencji
 ipcMain.on("open-preferences", (event, args) => {
