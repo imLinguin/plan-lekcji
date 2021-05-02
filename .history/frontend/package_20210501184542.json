@@ -32,25 +32,8 @@
       "icon": "content/images/logo.png"
     },
     "dmg": {
-      "background": "build/background.png",
-      "artifactName": "${productName}-mac-${version}.${ext}",
-      "window": {
-        "width": "600",
-        "height": "500"
-      },
-      "contents": [
-        {
-          "x": 10,
-          "y": 215,
-          "type": "file"
-        },
-        {
-          "x": 420,
-          "y": 215,
-          "type": "link",
-          "path": "/Applications"
-        }
-      ]
+      "backgroundColor": "#202225",
+      "artifactName": "${productName}-mac-${version}.${ext}"
     },
     "nsis": {
       "deleteAppDataOnUninstall": true

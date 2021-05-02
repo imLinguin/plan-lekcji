@@ -104,6 +104,7 @@ dist
 
 
 *.txt
+.history
 
 preferences.json
 klasy.json

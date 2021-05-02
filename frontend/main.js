@@ -113,8 +113,10 @@ ipcMain.on("closensave-popup", (from, data) => {
     app.relaunch()
     app.quit()
   }
+  else {
+    RefreshMain()
+  }
   preferencje = data;
-
 });
 //Otwarcie preferencji
 ipcMain.on("open-preferences", (event, args) => {
