@@ -43,7 +43,6 @@ Poniższe kroki przedstawają krok po kroku proces instalacji:
 Plik `preferences.json` który odpowiada za zapisanie informacji o ustawieniach znajduje się w odpowiednim folderze w `C:\Users\NAZWA_UŻYTKOWNIKA\AppData\Roaming\Plan Lekcji Elektronik`.
   
 ### Linux
-
 - Debian i dystrybucje na nim oparte
   1. Pobierz plik z rozszerzeniem `.deb` z najnowszego [Wydania](https://github.com/imLinguin/plan-lekcji/releases/latest).
   2. Zainstaluj pakiet korzystając z polecenia `sudo dpkg -i ./nazwapliku.deb`
@@ -54,9 +53,18 @@ Plik `preferences.json` który odpowiada za zapisanie informacji o ustawieniach 
   2. Przenieś plik do wybranej lokalizacji.
   3. Otwórz plik
 
-**WAŻNE** póki co nie jest tworzony plik .dekstop przez co aplikacja nie ukazuje się w menu aplikacji. Zalecane jest umieszczenie pliku w miejscu gdzie będzie łatwo dostępny.
+**WAŻNE** Póki co nie jest tworzony plik .dekstop przez co aplikacja nie ukazuje się w menu aplikacji. Zalecane jest umieszczenie pliku w miejscu gdzie będzie łatwo dostępny.
 
 Plik `preferences.json` który odpowiada za zapisanie informacji o ustawieniach znajduje się w odpowiednim folderze w `~/.config/`.
+
+### macOS
+ 1. Pobierz plik z rozszerzeniem `.dmg` z najnowszego [Wydania](https://github.com/imLinguin/plan-lekcji/releases/latest).
+ 2. Uruchom instalator.
+ 3. Przenieś ikonkę Planu Lekcji na ikonę foleru Applications
+
+**WAŻNE** Przed uruchomieniem zapoznaj się z [problemami](#znane-problemy), które mogą wystąpić!
+
+Plik `preferences.json` który odpowiada za zapisanie informacji o ustawieniach znajduje się w odpowiednim folderze w `~/Library/Application Support/Plan Lekcji Elektronik`.
 
 ## Konfiguracja
  ![obraz](https://user-images.githubusercontent.com/62100117/111635657-05919c00-87f8-11eb-888b-bd0bf135b599.png)
@@ -73,10 +81,23 @@ Plik `preferences.json` który odpowiada za zapisanie informacji o ustawieniach 
  - Motyw - do wyboru `Jasny` i `Ciemny`;
  
 ## Znane problemy
-  System Windows wyświetla okno (widoczne na zdjęciu niżej) przy próbie uruchomienia instalatora. Jest to spowodowane brakiem certyfikatu. Spokojnie to nie wirus 😊. Aby ominąć problem należy kliknąć `Więcej informacji` a następnie `Uruchom mimo to`.
+  ### Windows
+  System Windows wyświetla okno (widoczne na zdjęciu niżej) przy próbie uruchomienia instalatora. 
+  Jest to spowodowane brakiem certyfikatu. Spokojnie to nie wirus 😊. 
+  Aby ominąć problem należy kliknąć `Więcej informacji` a następnie `Uruchom mimo to`.
   
  ![Błąd Orwella](https://user-images.githubusercontent.com/62100117/111198030-6da96d80-85bf-11eb-9a42-9eb084797fb7.png)
  
+  ### macOS
+  1. Przy pierwszym uruchomieniu aplikacji, system tworzy okno (screen poniżej), które uniemożliwia "normalne otwarcie" programu. 
+  Aby z tym się uporać należy wejść w: `Preferencje Systemowe => Ochrona i prywatność => Ogólne`. 
+  Podczas otwierania Planu Lekcji zostanie wyświetlona opcja uruchomienia mimo to, którą trzeba wybrać, aby móc korzystać z naszego projektu. 
+  Następnie wystarczy tylko potwierdzić, klikając w przycisk `Otwórz`. 
+  Problem ten występuje tylko po instalacji i jest spowodowany brakiem certyfikatu Apple.
+  
+  ![Błąd Apple](https://user-images.githubusercontent.com/74045117/116813779-ce800b80-ab55-11eb-8b28-4476ebd1d0f0.png)
+  
+  2. Domyślnie w systemie od Apple powiadomienia dla naszej aplikacji są wyłączone. W czasie pojawienia się pierwszego alertu zostanie wyświetlony baner z ustawieniami, aby to zmienić.
 ## Autorzy
 
 - Aleksander Baran (dev)
