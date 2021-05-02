@@ -1,7 +1,7 @@
 {
   "name": "ft-plan-lekcji",
   "productName": "Plan Lekcji Elektronik",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Klient planu lekcji dla ZSE w Rzeszowie",
   "main": "main.js",
   "scripts": {
